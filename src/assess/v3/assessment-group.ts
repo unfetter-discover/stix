@@ -1,4 +1,4 @@
-import { StixEnum } from "../../unfetter/stix.enum";
+import { StixEnum } from '../../unfetter/stix.enum';
 
 /**
  * @description assessment group contains references to several assessment sets

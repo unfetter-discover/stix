@@ -1,6 +1,5 @@
 import { Mock } from '../../mock';
 import { AssessedByAttackPattern } from './assessed-by-attack-pattern';
-import { AssessmentObject } from './assessment-object';
 
 /**
  * @description an assessment of a single type ie, indicator, mitigation, sensor
@@ -15,4 +14,3 @@ export class AssessedByAttackPatternMock extends Mock<AssessedByAttackPattern> {
 }
 
 export const AssessedByAttackPatternMockFactory = new AssessedByAttackPatternMock();
-

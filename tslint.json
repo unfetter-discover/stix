@@ -14,7 +14,9 @@
         "object-literal-sort-keys": false,
         "variable-name": [
             true,
-            "allow-snake-case"
+            "allow-leading-underscore",
+            "allow-snake-case",
+            "allow-pascal-case"
         ],
         "interface-name": false,
         "no-string-literal": false

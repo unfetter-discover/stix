@@ -1,5 +1,5 @@
-import { AssessmentObject } from './assessment-object';
 import { Stix } from '../../unfetter/stix';
+import { AssessmentObject } from './assessment-object';
 
 /**
  * @description an assessment of a single type ie, indicator, mitigation, sensor

@@ -24,7 +24,7 @@
     "build": "tsc -v && tsc -p . --outDir ./dist",
     "build:watch": "npm run build -- --watch",
     "clean": "rm -rf dist/ tsdocs/ coverage/ .nyc_output/",
-    "lint": "tsc -v && tslint src/**/*.ts",
+    "lint": "tsc -v && tslint -p .",
     "docs": "typedoc --out tsdocs --ignoreCompilerErrors src/"
   },
   "dependencies": {

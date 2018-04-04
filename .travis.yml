@@ -1,0 +1,19 @@
+# Use Ubuntu 'trusty' distribution
+dist: trusty
+sudo: required
+lanugage: node_js
+node_js:
+  - "io.js"
+  - "9"
+
+branches:
+  only:
+    - develop
+
+install:
+  - npm install
+script:
+  - npm run lint
+  - npm run test
+  - npm run build
+  - npm run doc

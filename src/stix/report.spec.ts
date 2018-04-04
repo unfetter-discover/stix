@@ -9,8 +9,8 @@ describe('report stix model', () => {
     beforeEach(() => {
         stix = new Report();
         const uuid = UUID.v4();
-        stix.id = StixCoreEnum.COURSE_OF_ACTION + uuid;
-        stix.type = StixCoreEnum.COURSE_OF_ACTION;
+        stix.id = StixCoreEnum.REPORT + uuid;
+        stix.type = StixCoreEnum.REPORT;
     });
 
     it('should have a constructor', () => {

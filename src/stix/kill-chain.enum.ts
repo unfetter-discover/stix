@@ -5,7 +5,7 @@
  * @see https://www.dni.gov/files/ODNI/documents/features/A_Common_Cyber_Threat_Framework_Overview.pdf
  */
 export enum KillChainEnum {
-    'mitre-attack' = 'mitre-attack',
-    'lh-ctf' = 'lh-ctf',
-    'ntctf' = 'ntctf',
+    MITRE_ATTACK = 'mitre-attack',
+    LH_CTF = 'lh-ctf',
+    NTCTF = 'ntctf',
 }

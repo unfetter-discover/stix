@@ -1,5 +1,5 @@
-import { ExternalReference } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
 export declare class Sighting {
     readonly type: StixCoreEnum;
     id: number;

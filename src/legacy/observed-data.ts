@@ -1,10 +1,10 @@
-import { ExternalReference, KillChainPhase } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
 
 export class ObservedData {
     public id: string;
     public readonly type = StixCoreEnum.MALWARE;
-    public links: {self: string};
+    public links: { self: string };
 
     public attributes: {
         version: string;

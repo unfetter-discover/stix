@@ -1,5 +1,6 @@
-import { ExternalReference, KillChainPhase } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
+import { KillChainPhase } from './kill-chain-phase';
 
 export class ThreatActor {
     public id: string;
@@ -17,7 +18,7 @@ export class ThreatActor {
         name: string;
         created_by_ref: string;
     };
-     constructor(data?: ThreatActor) {
+    constructor(data?: ThreatActor) {
         if (data) {
             this.attributes = data.attributes;
             this.id = data.id;

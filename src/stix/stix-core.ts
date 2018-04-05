@@ -2,7 +2,6 @@ import { StixEnum } from '../unfetter/stix.enum';
 import { ExternalReference } from './external_reference';
 import { GranularMarking } from './granular-marking';
 import { KillChainPhase } from './kill-chain-phase';
-import { KillChainEnum } from './kill-chain.enum';
 import { StixCoreEnum } from './stix-core.enum';
 
 /**
@@ -33,6 +32,14 @@ export class StixCore<T extends StixCoreEnum = StixCoreEnum, E extends StixEnum 
 
     constructor(data?: object) {
         Object.assign(this, data);
+    }
+
+    /**
+     * @description generate json from this object
+     * @return {string}
+     */
+    public toJson(delim = '\t'): string {
+        return JSON.stringify(this, undefined, delim);
     }
 
 }

@@ -1,6 +1,7 @@
-import { StixEnum } from "../../unfetter/stix.enum";
+import { StixEnum } from '../../unfetter/stix.enum';
 /**
- * @description assessment set represents many object assessments, ie answers to many capabilities vs attack attackpatterns
+ * @description assessment set represents many object assessments,
+ *  ie answers to many capabilities vs attack attackpatterns
  * assessments set can represent state of an assessed infrastructure. ex. AsIs, ToBe, IfImplemented...
  */
 export declare class AssessmentSet {

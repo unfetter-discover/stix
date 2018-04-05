@@ -1,7 +1,6 @@
-import { StixCoreEnum } from './stix-core.enum';
-
 import * as UUID from 'uuid';
 import { CourseOfAction } from './course-of-action';
+import { StixCoreEnum } from './stix-core.enum';
 
 describe('course of action stix model', () => {
 

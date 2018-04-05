@@ -8,7 +8,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var KillChainEnum;
 (function (KillChainEnum) {
-    KillChainEnum["mitre-attack"] = "mitre-attack";
-    KillChainEnum["lh-ctf"] = "lh-ctf";
-    KillChainEnum["ntctf"] = "ntctf";
+    KillChainEnum["MITRE_ATTACK"] = "mitre-attack";
+    KillChainEnum["LH_CTF"] = "lh-ctf";
+    KillChainEnum["NTCTF"] = "ntctf";
 })(KillChainEnum = exports.KillChainEnum || (exports.KillChainEnum = {}));

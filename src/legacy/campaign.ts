@@ -1,4 +1,3 @@
-import { ExternalReference, KillChainPhase } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
 
 export class Campaign {

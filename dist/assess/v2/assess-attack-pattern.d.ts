@@ -5,7 +5,7 @@ import { KillChainPhase } from '../../stix/kill-chain-phase';
  */
 export declare class AssessAttackPattern {
     description?: string;
-    external_references?: ExternalReference[] | undefined;
+    external_references: ExternalReference[];
     id?: string;
     kill_chain_phases: KillChainPhase[];
     name?: string;

@@ -1,5 +1,5 @@
-import { StixEnum } from "../../unfetter/stix.enum";
-import { AssessedObject } from "./assessed-object";
+import { StixEnum } from '../../unfetter/stix.enum';
+import { AssessedObject } from './assessed-object';
 /**
  * @description Object assessment represents attack pattern to capability answers
  */

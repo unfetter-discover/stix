@@ -1,7 +1,6 @@
+import * as UUID from 'uuid';
 import { StixCore } from './stix-core';
 import { StixCoreEnum } from './stix-core.enum';
-
-import * as UUID from 'uuid';
 
 describe('stix core model', () => {
 

@@ -29,4 +29,9 @@ export declare class StixCore<T extends StixCoreEnum = StixCoreEnum, E extends S
     modified: string;
     created: string;
     constructor(data?: object);
+    /**
+     * @description generate json from this object
+     * @return {string}
+     */
+    toJson(delim?: string): string;
 }

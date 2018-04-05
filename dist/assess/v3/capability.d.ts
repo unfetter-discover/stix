@@ -1,5 +1,5 @@
-import { StixEnum } from "../../unfetter/stix.enum";
-import { ExternalReference } from "../../stix/external_reference";
+import { ExternalReference } from '../../stix/external_reference';
+import { StixEnum } from '../../unfetter/stix.enum';
 /**
  * @description a capability could represent a product, ex. AntiVirus software
  */

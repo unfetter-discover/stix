@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var attack_pattern_1 = require("./attack-pattern");
+exports.AttackPattern = attack_pattern_1.AttackPattern;
 var course_of_action_1 = require("./course-of-action");
 exports.CourseOfAction = course_of_action_1.CourseOfAction;
 var external_reference_1 = require("./external_reference");
@@ -12,6 +14,10 @@ var kill_chain_phase_1 = require("./kill-chain-phase");
 exports.KillChainPhase = kill_chain_phase_1.KillChainPhase;
 var kill_chain_enum_1 = require("./kill-chain.enum");
 exports.KillChainEnum = kill_chain_enum_1.KillChainEnum;
+var marking_definition_1 = require("./marking-definition");
+exports.MarkingDefinition = marking_definition_1.MarkingDefinition;
+var report_1 = require("./report");
+exports.Report = report_1.Report;
 var stix_core_bundle_1 = require("./stix-core-bundle");
 exports.StixCoreBundle = stix_core_bundle_1.StixCoreBundle;
 var stix_core_enum_1 = require("./stix-core.enum");

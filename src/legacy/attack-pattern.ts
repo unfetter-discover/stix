@@ -1,10 +1,11 @@
-import { ExternalReference, KillChainPhase } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
+import { KillChainPhase } from './kill-chain-phase';
 
 export class AttackPattern {
     public id: string;
     public readonly type = StixCoreEnum.ATTACK_PATTERN;
-    public links: {self: string};
+    public links: { self: string };
     public x_unfetter_sophistication_level: number;
     public description: string;
 

@@ -1,5 +1,6 @@
-import { ExternalReference, KillChainPhase } from '.';
+
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
 
 export class Sighting {
     public readonly type = StixCoreEnum.SIGHTING;
@@ -17,16 +18,16 @@ export class Sighting {
         count: 0;
         sighting_of_ref: string;
         observed_data_refs: [
-          string
+            string
         ];
         where_sighted_refs: [
-          string
+            string
         ];
         summary: boolean;
         created_by_ref: string;
     };
 
-     constructor(data?: Sighting) {
+    constructor(data?: Sighting) {
         if (data) {
             this.attributes = data.attributes;
             this.id = data.id;
@@ -37,9 +38,9 @@ export class Sighting {
     }
 
     public formatDate(): void {
-       this.attributes.first_seen =  this.attributes.first_seen ?
+        this.attributes.first_seen = this.attributes.first_seen ?
             new Date(this.attributes.first_seen) : new Date();
-       this.attributes.last_seen =  this.attributes.last_seen ?
+        this.attributes.last_seen = this.attributes.last_seen ?
             new Date(this.attributes.last_seen) : new Date();
     }
 

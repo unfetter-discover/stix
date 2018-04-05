@@ -1,5 +1,6 @@
-import { ExternalReference, KillChainPhase } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
+import { KillChainPhase } from './kill-chain-phase';
 
 export class Indicator {
     public id: string;
@@ -35,9 +36,9 @@ export class Indicator {
     }
 
     public formatDate(): void {
-        this.attributes.valid_from =  this.attributes.valid_from ?
+        this.attributes.valid_from = this.attributes.valid_from ?
             new Date(this.attributes.valid_from) : new Date();
-        this.attributes.valid_until =  this.attributes.valid_until ?
+        this.attributes.valid_until = this.attributes.valid_until ?
             new Date(this.attributes.valid_until) : new Date();
     }
 

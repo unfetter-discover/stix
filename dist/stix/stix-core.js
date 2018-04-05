@@ -16,5 +16,12 @@ class StixCore {
         this.created = new Date().toISOString();
         Object.assign(this, data);
     }
+    /**
+     * @description generate json from this object
+     * @return {string}
+     */
+    toJson(delim = '\t') {
+        return JSON.stringify(this, undefined, delim);
+    }
 }
 exports.StixCore = StixCore;

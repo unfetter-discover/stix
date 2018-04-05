@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("./stix-core.enum");
 const UUID = require("uuid");
 const course_of_action_1 = require("./course-of-action");
+const stix_core_enum_1 = require("./stix-core.enum");
 describe('course of action stix model', () => {
     let stix;
     beforeEach(() => {

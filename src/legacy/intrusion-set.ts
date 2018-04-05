@@ -1,5 +1,6 @@
-import { ExternalReference, KillChainPhase } from '.';
 import { StixCoreEnum } from '../stix/stix-core.enum';
+import { ExternalReference } from './externalReference';
+import { KillChainPhase } from './kill-chain-phase';
 
 export class IntrusionSet {
     public id: string;

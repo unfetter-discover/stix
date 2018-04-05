@@ -13,6 +13,7 @@ var StixCoreEnum;
     StixCoreEnum["INDICATOR"] = "indicator";
     StixCoreEnum["INTRUSION_SET"] = "intrusion-set";
     StixCoreEnum["MALWARE"] = "malware";
+    StixCoreEnum["MARKING_DEFINITION"] = "marking-definition";
     StixCoreEnum["OBSERVED_DATA"] = "observed-data";
     StixCoreEnum["REPORT"] = "report";
     StixCoreEnum["THREAT_REPORT"] = "threat-report";

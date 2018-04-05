@@ -1,4 +1,5 @@
-import { ExternalReference, KillChainPhase } from '.';
+import { ExternalReference } from './externalReference';
+import { KillChainPhase } from './kill-chain-phase';
 
 export class Relationship {
     public id: string;

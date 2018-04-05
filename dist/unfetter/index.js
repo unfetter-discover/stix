@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var attack_pattern_1 = require("./attack-pattern");
+exports.AttackPattern = attack_pattern_1.AttackPattern;
 var sensor_1 = require("./sensor");
 exports.Sensor = sensor_1.Sensor;
 var stix_bundle_1 = require("./stix-bundle");

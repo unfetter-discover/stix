@@ -1,0 +1,45 @@
+{
+  "name": "stix",
+  "scope": "@unfetter-discover",
+  "keywords": [
+    "unfetter"
+  ],
+  "author": "UNFETTER",
+  "homepage": "https://iadgov.github.io/unfetter/",
+  "bugs": {
+    "url": "https://github.com/unfetter-discover/unfetter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mushinlogit/stix2.git"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "stix 2.0 data model",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jasmine-ts --config=jasmine.json",
+    "coverage": "nyc --extension .ts --reporter=lcov --reporter=text-lcov npm test && nyc report",
+    "build": "tsc -v && tsc -p . --outDir ./dist",
+    "build:watch": "npm run build -- --watch",
+    "clean": "rm -rf dist/ tsdocs/ coverage/ .nyc_output/",
+    "lint": "tsc -v && tslint -p .",
+    "docs": "typedoc --out tsdocs --ignoreCompilerErrors src/"
+  },
+  "dependencies": {
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/lodash": "^4.14.95",
+    "@types/uuid": "^3.4.3",
+    "jasmine": "^2.9.0",
+    "jasmine-ts": "^0.2.1",
+    "nyc": "^11.4.1",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.9.1",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.7.0"
+  }
+}

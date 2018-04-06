@@ -10,6 +10,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  *  but one cannot extend a typescript string enum class
  */
 class StixCore {
+    // TODO: determine if revoked belongs in this base class
     constructor(data) {
         this.version = '2.0';
         this.valid_from = new Date().toISOString();

@@ -12,3 +12,5 @@ var stix_1 = require("./stix");
 exports.Stix = stix_1.Stix;
 var wrapped_stix_1 = require("./wrapped-stix");
 exports.WrappedStix = wrapped_stix_1.WrappedStix;
+var unfetter_identity_1 = require("./unfetter-identity");
+exports.UnfetterIdentity = unfetter_identity_1.UnfetterIdentity;

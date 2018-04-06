@@ -30,6 +30,8 @@ export class StixCore<T extends StixCoreEnum = StixCoreEnum, E extends StixEnum 
     public modified: string;
     public created = new Date().toISOString();
 
+    // TODO: determine if revoked belongs in this base class
+
     constructor(data?: object) {
         Object.assign(this, data);
     }

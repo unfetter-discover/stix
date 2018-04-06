@@ -2,6 +2,7 @@ export { AttackPattern } from './attack-pattern';
 export { CourseOfAction } from './course-of-action';
 export { ExternalReference } from './external_reference';
 export { GranularMarking } from './granular-marking';
+export { Identity } from './identity';
 export { Indicator } from './indicator';
 export { KillChainPhase } from './kill-chain-phase';
 export { KillChainEnum } from './kill-chain.enum';

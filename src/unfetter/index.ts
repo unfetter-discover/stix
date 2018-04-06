@@ -6,3 +6,4 @@ export { StixBundle } from './stix-bundle';
 export { StixEnum } from './stix.enum';
 export { Stix } from './stix';
 export { WrappedStix } from './wrapped-stix';
+export { UnfetterIdentity } from './unfetter-identity';

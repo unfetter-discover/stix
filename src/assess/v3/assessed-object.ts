@@ -1,3 +1,4 @@
+import { StixEnum } from '../../unfetter/stix.enum';
 import { Question } from './question';
 
 /**
@@ -8,4 +9,5 @@ export class AssessedObject {
     // ref to attack pattern id
     public assessed_object_ref: string;
     public questions: Question[];
+    public type = StixEnum.ASSESSED_OBJECT;
 }

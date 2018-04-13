@@ -15,8 +15,12 @@ class Mock {
     genNumber() {
         return Math.round(Math.random() * 90000);
     }
-    genId() {
-        return UUID.v4();
+    genId(type) {
+        const uuid = UUID.v4();
+        if (type) {
+            return type + '--' + uuid;
+        }
+        return uuid;
     }
 }
 exports.Mock = Mock;

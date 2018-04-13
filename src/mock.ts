@@ -1,4 +1,6 @@
 import * as UUID from 'uuid';
+import { StixCoreEnum } from './stix/stix-core.enum';
+import { StixEnum } from './unfetter/stix.enum';
 
 /**
  * @description base class for the spec to mock data objects
@@ -18,7 +20,11 @@ export abstract class Mock<T> {
     protected genNumber(): number {
         return Math.round(Math.random() * 90000);
     }
-    protected genId(): string {
-        return UUID.v4();
+    protected genId(type?: StixEnum | StixCoreEnum): string {
+        const uuid = UUID.v4();
+        if (type) {
+            return type + '--' + uuid;
+        }
+        return uuid;
     }
 }

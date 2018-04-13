@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const stix_1 = require("../../unfetter/stix");
 const stix_enum_1 = require("../../unfetter/stix.enum");
 /**
- * @description Object assessment represents attack pattern to capability answers
+ *  @description Category is a generic bin name for a real products capability, ex. Network Monitor
  *  This object is an Unfetter Stix extension
  */
-class ObjectAssessment extends stix_1.Stix {
+class Category extends stix_1.Stix {
     /**
      * @description generate an object with default fields for this type
      *  will copy extra fields from the data passed in
@@ -14,7 +14,7 @@ class ObjectAssessment extends stix_1.Stix {
      */
     constructor(data) {
         super(data);
-        this.type = stix_enum_1.StixEnum.OBJECT_ASSESSMENT;
+        this.type = stix_enum_1.StixEnum.CATEGORY;
     }
 }
-exports.ObjectAssessment = ObjectAssessment;
+exports.Category = Category;

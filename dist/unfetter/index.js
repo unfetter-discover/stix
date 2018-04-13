@@ -14,3 +14,5 @@ var wrapped_stix_1 = require("./wrapped-stix");
 exports.WrappedStix = wrapped_stix_1.WrappedStix;
 var unfetter_identity_1 = require("./unfetter-identity");
 exports.UnfetterIdentity = unfetter_identity_1.UnfetterIdentity;
+var unfetter_identity_mock_1 = require("./unfetter-identity.mock");
+exports.UnfetterIdentityMockFactory = unfetter_identity_mock_1.UnfetterIdentityMockFactory;

@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class StixCore {
     // TODO: determine if revoked belongs in this base class
     constructor(data) {
-        this.version = '2.0';
+        this.version = 2.0;
         this.valid_from = new Date().toISOString();
         this.created = new Date().toISOString();
         Object.assign(this, data);

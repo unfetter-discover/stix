@@ -7,9 +7,11 @@ class QuestionMock extends mock_1.Mock {
     mockOne() {
         const tmp = new _1.Question();
         tmp.id = this.genId(stix_enum_1.StixEnum.QUESTION);
-        tmp.detect = _1.QuestionAnswerEnum.MEDIUM;
-        tmp.protect = _1.QuestionAnswerEnum.MEDIUM;
-        tmp.respond = _1.QuestionAnswerEnum.MEDIUM;
+        // tmp.detect = QuestionAnswerEnum.MEDIUM;
+        // tmp.protect = QuestionAnswerEnum.MEDIUM;
+        // tmp.respond = QuestionAnswerEnum.MEDIUM;
+        tmp.name = 'mitigate';
+        tmp.score = _1.QuestionAnswerEnum.MEDIUM;
         return tmp;
     }
 }

@@ -7,6 +7,7 @@ const stix_enum_1 = require("../../unfetter/stix.enum");
 class AssessedObject {
     constructor() {
         this.type = stix_enum_1.StixEnum.ASSESSED_OBJECT;
+        this.questions = this.questions || [];
     }
 }
 exports.AssessedObject = AssessedObject;

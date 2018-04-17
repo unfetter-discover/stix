@@ -19,7 +19,7 @@ describe('course of action stix model', () => {
 
     it('should know have a version', () => {
         expect(stix).toBeDefined();
-        expect(stix.version).toEqual('2.0');
+        expect(stix.version).toEqual(2);
     });
 
     it('should know its own type', () => {

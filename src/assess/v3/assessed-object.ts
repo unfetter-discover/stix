@@ -9,5 +9,10 @@ export class AssessedObject {
     // ref to attack pattern id
     public assessed_object_ref: string;
     public questions: Question[];
-    public type = StixEnum.ASSESSED_OBJECT;
+    public type: StixEnum;
+
+    constructor() {
+        this.type = StixEnum.ASSESSED_OBJECT;
+        this.questions = this.questions || [];
+    }
 }

@@ -6,7 +6,7 @@ import { QuestionAnswerEnum } from './question-answer.enum';
 export declare class Question {
     id?: string;
     type: StixEnum;
-    protect: QuestionAnswerEnum;
-    detect: QuestionAnswerEnum;
-    respond: QuestionAnswerEnum;
+    name: 'mitigate' | 'indicate' | 'respond';
+    score: QuestionAnswerEnum;
+    toLongForm(answer: QuestionAnswerEnum): string;
 }

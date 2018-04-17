@@ -15,6 +15,7 @@ class Category extends stix_1.Stix {
     constructor(data) {
         super(data);
         this.type = stix_enum_1.StixEnum.CATEGORY;
+        this.assessed_objects = this.assessed_objects || [];
     }
 }
 exports.Category = Category;

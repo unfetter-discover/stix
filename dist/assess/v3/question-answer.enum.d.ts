@@ -1,7 +1,7 @@
 export declare enum QuestionAnswerEnum {
-    SIGNIFICANT = "SIGNIFICANT",
-    MEDIUM = "MEDIUM",
-    LOW = "LOW",
-    NOT_APPLICABLE = "NOT_APPLICABLE",
-    UNANSWERED = "UNASWERED",
+    SIGNIFICANT = "S",
+    MEDIUM = "M",
+    LOW = "L",
+    NOT_APPLICABLE = "NA",
+    UNANSWERED = "N",
 }

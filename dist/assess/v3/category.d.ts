@@ -5,7 +5,7 @@ import { AssessedObject } from './assessed-object';
  *  This object is an Unfetter Stix extension
  */
 export declare class Category extends Stix {
-    assessedObjects: AssessedObject[];
+    assessed_objects: AssessedObject[];
     /**
      * @description generate an object with default fields for this type
      *  will copy extra fields from the data passed in

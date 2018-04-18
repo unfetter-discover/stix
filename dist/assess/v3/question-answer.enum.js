@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var QuestionAnswerEnum;
 (function (QuestionAnswerEnum) {
-    QuestionAnswerEnum["SIGNIFICANT"] = "SIGNIFICANT";
-    QuestionAnswerEnum["MEDIUM"] = "MEDIUM";
-    QuestionAnswerEnum["LOW"] = "LOW";
-    QuestionAnswerEnum["NOT_APPLICABLE"] = "NOT_APPLICABLE";
-    QuestionAnswerEnum["UNANSWERED"] = "UNASWERED";
+    QuestionAnswerEnum["SIGNIFICANT"] = "S";
+    QuestionAnswerEnum["MEDIUM"] = "M";
+    QuestionAnswerEnum["LOW"] = "L";
+    QuestionAnswerEnum["NOT_APPLICABLE"] = "NA";
+    QuestionAnswerEnum["UNANSWERED"] = "N";
 })(QuestionAnswerEnum = exports.QuestionAnswerEnum || (exports.QuestionAnswerEnum = {}));

@@ -8,4 +8,5 @@ export declare class AssessedObject {
     assessed_object_ref: string;
     questions: Question[];
     type: StixEnum;
+    constructor();
 }

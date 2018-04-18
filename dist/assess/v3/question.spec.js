@@ -16,10 +16,22 @@ describe('assessment 3.0 question model', () => {
         expect(cut.id).toContain(stix_enum_1.StixEnum.QUESTION);
         expect(cut.type).toEqual(stix_enum_1.StixEnum.QUESTION);
     });
-    it('should know hold an evaluation across 3 data points', () => {
+    it('should know hold an evaluation for mitigate', () => {
         expect(cut).toBeDefined();
-        expect(cut.detect).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
-        expect(cut.protect).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
-        expect(cut.respond).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
+        cut.name = 'mitigate';
+        expect(cut.name).toEqual('mitigate');
+        expect(cut.score).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
+    });
+    it('should know hold an evaluation for indicate', () => {
+        expect(cut).toBeDefined();
+        cut.name = 'indicate';
+        expect(cut.name).toEqual('indicate');
+        expect(cut.score).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
+    });
+    it('should know hold an evaluation for respond', () => {
+        expect(cut).toBeDefined();
+        cut.name = 'respond';
+        expect(cut.name).toEqual('respond');
+        expect(cut.score).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
     });
 });

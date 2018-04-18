@@ -7,7 +7,24 @@ import { QuestionAnswerEnum } from './question-answer.enum';
 export class Question {
     public id?: string;
     public type = StixEnum.QUESTION;
-    public protect = QuestionAnswerEnum.UNANSWERED;
-    public detect = QuestionAnswerEnum.UNANSWERED;
-    public respond = QuestionAnswerEnum.UNANSWERED;
+    public name: 'mitigate' | 'indicate' | 'respond';
+    public score: QuestionAnswerEnum = QuestionAnswerEnum.UNANSWERED;
+    // public protect = QuestionAnswerEnum.UNANSWERED;
+    // public detect = QuestionAnswerEnum.UNANSWERED;
+    // public respond = QuestionAnswerEnum.UNANSWERED;
+
+    public toLongForm(answer: QuestionAnswerEnum): string {
+        switch (answer) {
+            case(QuestionAnswerEnum.LOW):
+                return 'LOW';
+            case(QuestionAnswerEnum.MEDIUM):
+                return 'MEDIUM';
+            case(QuestionAnswerEnum.SIGNIFICANT):
+                return 'SIGNIFICANT';
+            case(QuestionAnswerEnum.NOT_APPLICABLE):
+                return 'NOT APPLICABLE';
+            case(QuestionAnswerEnum.UNANSWERED):
+                return 'UNANSWERED';
+        }
+    }
 }

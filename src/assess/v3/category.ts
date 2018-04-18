@@ -8,7 +8,7 @@ import { AssessedObject } from './assessed-object';
  */
 export class Category extends Stix {
 
-    public assessedObjects: AssessedObject[];
+    public assessed_objects: AssessedObject[];
 
     /**
      * @description generate an object with default fields for this type
@@ -18,5 +18,6 @@ export class Category extends Stix {
     constructor(data?: object) {
         super(data);
         this.type = StixEnum.CATEGORY;
+        this.assessed_objects = this.assessed_objects || [];
     }
 }

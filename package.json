@@ -16,14 +16,14 @@
   "license": "MIT",
   "version": "0.3.6",
   "description": "stix 2.0 data model",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jasmine-ts --config=jasmine.json",
     "coverage": "nyc --extension .ts --reporter=lcov --reporter=text-lcov npm test && nyc report",
-    "build": "tsc -v && tsc -p . --outDir ./dist",
+    "build": "tsc -v && tsc -p . --outDir .",
     "build:watch": "npm run build -- --watch",
-    "clean": "rm -rf dist/ tsdocs/ coverage/ .nyc_output/",
+    "clean": "rm -rf dist/ tsdocs/ coverage/ .nyc_output/ assess/ common/ json/ legacy/ stix/ unfetter/ *.d.ts *.js",
     "lint": "tsc -v && tslint -p .",
     "docs": "typedoc --out tsdocs --ignoreCompilerErrors src/"
   },

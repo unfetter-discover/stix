@@ -4,9 +4,7 @@ import { KillChainEnum } from './kill-chain.enum';
 
 export class KillChainPhaseMock extends Mock<KillChainPhase> {
     public mockOne(): KillChainPhase {
-        const tmp = new KillChainPhase();
-        tmp.kill_chain_name = KillChainEnum.NTCTF;
-        tmp.phase_name = 'administer - planning';
+        const tmp = new KillChainPhase(KillChainEnum.NTCTF, 'administer - planning');
         return tmp;
     }
 }

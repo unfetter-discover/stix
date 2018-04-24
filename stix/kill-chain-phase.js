@@ -5,5 +5,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @see https://oasis-open.github.io/cti-documentation/stix/intro
  */
 class KillChainPhase {
+    /**
+     * @param data
+     */
+    constructor(kill_chain_name, phase_name) {
+        this.kill_chain_name = kill_chain_name;
+        this.phase_name = phase_name;
+    }
 }
 exports.KillChainPhase = KillChainPhase;

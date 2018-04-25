@@ -5,6 +5,12 @@ import { KillChainEnum } from './kill-chain.enum';
  * @see https://oasis-open.github.io/cti-documentation/stix/intro
  */
 export class KillChainPhase {
-    public kill_chain_name: KillChainEnum;
-    public phase_name: string;
+
+    /**
+     * @param data
+     */
+    constructor(
+        public kill_chain_name: KillChainEnum | string,
+        public phase_name: string,
+    ) { }
 }

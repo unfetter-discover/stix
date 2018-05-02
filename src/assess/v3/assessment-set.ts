@@ -6,14 +6,15 @@ import { StixEnum } from '../../unfetter/stix.enum';
  * assessments set can represent state of an assessed infrastructure. ex. AsIs, ToBe, IfImplemented...
  */
 export class AssessmentSet {
-    public id?: string;
-    public name: string;
-    public description: string;
-    public type: StixEnum.ASSESSMENT_SET;
-    public modified: string;
-    public created = new Date().toISOString();
-    // created by ref is a identity id
-    public created_by_ref: string;
     // assessments are object assessment ids
     public assessments: string[];
+    // created by ref is a identity id
+    public created = new Date().toISOString();
+    public created_by_ref: string;
+    public description: string;
+    public id?: string;
+    public is_baseline = false;
+    public modified: string;
+    public name: string;
+    public readonly type = StixEnum.ASSESSMENT_SET;
 }

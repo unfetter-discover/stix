@@ -16,16 +16,16 @@ describe('assessment 3.0 question model', () => {
         expect(cut.id).toContain(stix_enum_1.StixEnum.QUESTION);
         expect(cut.type).toEqual(stix_enum_1.StixEnum.QUESTION);
     });
-    it('should know hold an evaluation for mitigate', () => {
+    it('should know hold an evaluation for protect', () => {
         expect(cut).toBeDefined();
-        cut.name = 'mitigate';
-        expect(cut.name).toEqual('mitigate');
+        cut.name = 'protect';
+        expect(cut.name).toEqual('protect');
         expect(cut.score).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
     });
-    it('should know hold an evaluation for indicate', () => {
+    it('should know hold an evaluation for detect', () => {
         expect(cut).toBeDefined();
-        cut.name = 'indicate';
-        expect(cut.name).toEqual('indicate');
+        cut.name = 'detect';
+        expect(cut.name).toEqual('detect');
         expect(cut.score).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
     });
     it('should know hold an evaluation for respond', () => {
@@ -33,5 +33,20 @@ describe('assessment 3.0 question model', () => {
         cut.name = 'respond';
         expect(cut.name).toEqual('respond');
         expect(cut.score).toEqual(question_answer_enum_1.QuestionAnswerEnum.MEDIUM);
+    });
+    it('should know how to map PDR to MIR - 1', () => {
+        expect(cut).toBeDefined();
+        cut.name = 'protect';
+        expect(cut.toMIR(cut.name)).toEqual('mitigate');
+    });
+    it('should know how to map PDR to MIR - 2', () => {
+        expect(cut).toBeDefined();
+        cut.name = 'detect';
+        expect(cut.toMIR(cut.name)).toEqual('indicate');
+    });
+    it('should know how to map PDR to MIR - 3', () => {
+        expect(cut).toBeDefined();
+        cut.name = 'respond';
+        expect(cut.toMIR(cut.name)).toEqual('respond');
     });
 });

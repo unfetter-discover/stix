@@ -7,10 +7,10 @@ import { AssessedObject } from './assessed-object';
  *  This object is an Unfetter Stix extension
  */
 export class ObjectAssessment extends Stix {
-    // object ref is a capability id
-    public object_ref: string;
     // AssessedObject has a attack pattern ids
     public assessments_objects: AssessedObject[];
+    // object ref is a capability id
+    public object_ref: string;
 
     /**
      * @description generate an object with default fields for this type

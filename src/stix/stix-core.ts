@@ -14,21 +14,21 @@ import { StixCoreEnum } from './stix-core.enum';
  *  but one cannot extend a typescript string enum class
  */
 export class StixCore<T extends StixCoreEnum = StixCoreEnum, E extends StixEnum = StixEnum> {
-    public version = 2.0;
+    public created = new Date().toISOString();
+    public created_by_ref: string;
+    public description: string;
     public external_references: ExternalReference[];
     public granular_markings: GranularMarking[];
-    public name: string;
-    public description: string;
-    public pattern: string;
-    public kill_chain_phases?: KillChainPhase[];
-    public object_refs?: string[];
     public id?: string;
-    public created_by_ref: string;
-    public type: T | E;
-    public valid_from = new Date().toISOString();
+    public kill_chain_phases?: KillChainPhase[];
     public labels: string[];
     public modified: string;
-    public created = new Date().toISOString();
+    public name: string;
+    public object_refs?: string[];
+    public pattern: string;
+    public type: T | E;
+    public valid_from = new Date().toISOString();
+    public version = 2.0;
 
     // TODO: determine if revoked belongs in this base class
 

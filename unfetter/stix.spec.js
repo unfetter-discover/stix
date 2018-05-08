@@ -1,17 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_1 = require("./stix");
+const stix_mock_1 = require("./stix.mock");
 /**
  * @see https://stixproject.github.io/
  */
 describe('stix model', () => {
     let stix;
     beforeEach(() => {
-        stix = new stix_1.Stix();
-        stix.description = 'description';
-        stix.name = 'stixname';
-        stix.object_refs = ['ref1', 'ref2'];
-        stix.created_by_ref = 'author';
+        stix = stix_mock_1.StixMockFactory.mockOne();
     });
     it('should have a constructor', () => {
         expect(stix).toBeDefined();

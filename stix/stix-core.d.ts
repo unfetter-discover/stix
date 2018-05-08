@@ -12,7 +12,7 @@ import { StixCoreEnum } from './stix-core.enum';
  * This references unfetter stix code and create a circular dependency,
  *  but one cannot extend a typescript string enum class
  */
-export declare class StixCore<T extends StixCoreEnum = StixCoreEnum, E extends StixEnum = StixEnum> {
+export declare class StixCore<T extends StixCoreEnum | StixEnum = StixCoreEnum | StixEnum> {
     created: string;
     created_by_ref: string;
     description: string;
@@ -25,7 +25,7 @@ export declare class StixCore<T extends StixCoreEnum = StixCoreEnum, E extends S
     name: string;
     object_refs?: string[];
     pattern: string;
-    type: T | E;
+    type: T;
     valid_from: string;
     version: number;
     constructor(data?: object);

@@ -5,13 +5,8 @@ import { AssessmentObject } from './assessment-object';
 /**
  * @description
  */
-export declare class Assessment {
+export declare class Assessment extends Stix {
     assessmentMeta: AssessmentMeta;
     assessment_objects: AssessmentObject<Stix>[];
-    create_by_ref?: string;
-    description: string;
-    id?: string;
-    modified: string;
-    name: string;
     type: StixEnum;
 }

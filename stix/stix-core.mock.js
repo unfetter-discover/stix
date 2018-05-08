@@ -17,3 +17,4 @@ class StixCoreMock extends mock_1.Mock {
     }
 }
 exports.StixCoreMock = StixCoreMock;
+exports.StixCoreMockFactory = new StixCoreMock();

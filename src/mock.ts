@@ -4,6 +4,7 @@ import { StixEnum } from './unfetter/stix.enum';
 
 /**
  * @description base class for the spec to mock data objects
+ *  override `mockOne` and `mockMany` for custom implementations
  */
 export abstract class Mock<T> {
     public abstract mockOne(): T;
@@ -13,7 +14,7 @@ export abstract class Mock<T> {
     }
 
     public genOverRange(max = 1): T[] {
-        const arr = Array(max).fill(-1).map((_, i) => this.mockOne());
+        const arr = Array(max).fill(-1).map((_) => this.mockOne());
         return arr;
     }
 

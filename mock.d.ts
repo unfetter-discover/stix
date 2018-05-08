@@ -2,6 +2,7 @@ import { StixCoreEnum } from './stix/stix-core.enum';
 import { StixEnum } from './unfetter/stix.enum';
 /**
  * @description base class for the spec to mock data objects
+ *  override `mockOne` and `mockMany` for custom implementations
  */
 export declare abstract class Mock<T> {
     abstract mockOne(): T;

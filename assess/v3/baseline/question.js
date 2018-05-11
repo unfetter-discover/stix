@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_enum_1 = require("../../../unfetter/stix.enum");
-const question_answer_enum_1 = require("./question-answer.enum");
+var stix_enum_1 = require("../../../unfetter/stix.enum");
+var question_answer_enum_1 = require("./question-answer.enum");
 /**
  * @description represents answers for the three questions pertaining to protect, detect, respond (PDR)
  */
-class Question {
-    constructor() {
+var Question = /** @class */ (function () {
+    function Question() {
         this.type = stix_enum_1.StixEnum.QUESTION;
         this.score = question_answer_enum_1.QuestionAnswerEnum.UNANSWERED;
     }
-    toLongForm(answer) {
+    Question.prototype.toLongForm = function (answer) {
         switch (answer) {
             case (question_answer_enum_1.QuestionAnswerEnum.LOW):
                 return 'LOW';
@@ -23,17 +23,17 @@ class Question {
             case (question_answer_enum_1.QuestionAnswerEnum.UNANSWERED):
                 return 'UNANSWERED';
         }
-    }
+    };
     /**
      * @description translate the Protect Detect Respond string to its Mitigate Indicate Respond equivalent
      * @param  {PdrString} name
      * @returns MirString
      */
-    toMIR(name) {
+    Question.prototype.toMIR = function (name) {
         if (!name) {
             return name;
         }
-        const lowerCaseName = name.toLowerCase();
+        var lowerCaseName = name.toLowerCase();
         switch (lowerCaseName) {
             case ('protect'):
                 return 'mitigate';
@@ -44,6 +44,7 @@ class Question {
             default:
                 return undefined;
         }
-    }
-}
+    };
+    return Question;
+}());
 exports.Question = Question;

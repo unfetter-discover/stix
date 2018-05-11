@@ -4,13 +4,13 @@ import { Stix } from './stix';
 
 export class StixMock extends Mock<Stix> {
 
-    public mockOne(): Stix {
+    public mockOne(id?: string): Stix {
         const stix = new Stix();
         const number = this.genNumber();
-        stix.id = `stix-${number}`;
+        stix.id = id || `stix--${number}`;
         stix.name = `name-${number}`;
         stix.description = `description-${number}`;
-        stix.object_refs = ['1', '2'];
+        stix.object_refs = ['ref1', 'ref2'];
         stix.modified = new Date().toISOString();
         stix.granular_markings = [new GranularMarking()];
         return stix;

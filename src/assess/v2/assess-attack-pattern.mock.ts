@@ -4,7 +4,7 @@ export class AssessAttackPatternMock extends Mock<AssessAttackPattern> {
     public mockOne(): AssessAttackPattern {
         const tmp = new AssessAttackPattern();
         tmp.id = this.genId();
-        tmp.attackPatternId = 'attack-pattern-' + this.genId();
+        tmp.attackPatternId = 'attack-pattern--' + this.genId();
         return tmp;
     }
 }

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class Report {
-    constructor() {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var Report = /** @class */ (function () {
+    function Report() {
         this.type = stix_core_enum_1.StixCoreEnum.REPORT;
         this.attributes = {
             version: '',
@@ -18,5 +18,6 @@ class Report {
             created_by_ref: '',
         };
     }
-}
+    return Report;
+}());
 exports.Report = Report;

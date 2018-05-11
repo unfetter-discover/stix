@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class SummaryAggregation {
-}
+var SummaryAggregation = /** @class */ (function () {
+    function SummaryAggregation() {
+    }
+    return SummaryAggregation;
+}());
 exports.SummaryAggregation = SummaryAggregation;

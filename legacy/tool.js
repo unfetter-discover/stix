@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class Tool {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var Tool = /** @class */ (function () {
+    function Tool(data) {
         this.type = stix_core_enum_1.StixCoreEnum.TOOL;
         if (data) {
             this.attributes = data.attributes;
@@ -12,7 +12,7 @@ class Tool {
             this.attributes = this.createAttributes();
         }
     }
-    createAttributes() {
+    Tool.prototype.createAttributes = function () {
         return {
             // version: '1',
             // created: moment().format(Constance.DATE_FORMATE),
@@ -24,6 +24,7 @@ class Tool {
             external_references: [],
             kill_chain_phases: [],
         };
-    }
-}
+    };
+    return Tool;
+}());
 exports.Tool = Tool;

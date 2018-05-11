@@ -7,8 +7,8 @@ import { UnfetterStixProperties } from './unfetter-stix-properties';
  * @see https://oasis-open.github.io/cti-documentation/stix/intro
  */
 export declare class UnfetterIndicator extends Indicator implements UnfetterStixProperties {
-    metaProperties: MetaProps;
-    extendedProperties: Dictionary<string>;
+    metaProperties?: MetaProps;
+    extendedProperties?: Dictionary<string>;
     /**
      * @param data
      */

@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class AssessAttackPatternMeta {
-}
+var AssessAttackPatternMeta = /** @class */ (function () {
+    function AssessAttackPatternMeta() {
+    }
+    return AssessAttackPatternMeta;
+}());
 exports.AssessAttackPatternMeta = AssessAttackPatternMeta;

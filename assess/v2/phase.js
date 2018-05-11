@@ -3,10 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @description an assessment of a single type ie, indicator, mitigation, sensor
  */
-class Phase {
-    constructor() {
+var Phase = /** @class */ (function () {
+    function Phase() {
         this.assessedObjects = [];
         this.attackPatterns = [];
     }
-}
+    return Phase;
+}());
 exports.Phase = Phase;

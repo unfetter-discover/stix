@@ -1,28 +1,28 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_mock_1 = require("./stix.mock");
+var stix_mock_1 = require("./stix.mock");
 /**
  * @see https://stixproject.github.io/
  */
-describe('stix model', () => {
-    let stix;
-    beforeEach(() => {
+describe('stix model', function () {
+    var stix;
+    beforeEach(function () {
         stix = stix_mock_1.StixMockFactory.mockOne();
     });
-    it('should have a constructor', () => {
+    it('should have a constructor', function () {
         expect(stix).toBeDefined();
     });
-    it('should have an undefined type', () => {
+    it('should have an undefined type', function () {
         expect(stix.type).toBeUndefined();
     });
-    it('should have extra attributes', () => {
+    it('should have extra attributes', function () {
         expect(stix.extendedProperties);
         expect(stix.metaProperties);
     });
-    it('should generate json', () => {
+    it('should generate json', function () {
         expect(stix.toJson()).toContain('description');
-        expect(stix.toJson()).toContain('stixname');
-        expect(stix.toJson()).toContain('author');
+        expect(stix.toJson()).toContain('name');
+        expect(stix.toJson()).toContain('stix--');
         expect(stix.toJson()).toContain('ref1');
         expect(stix.toJson()).toContain('ref2');
     });

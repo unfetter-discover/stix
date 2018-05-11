@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class Sighting {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var Sighting = /** @class */ (function () {
+    function Sighting(data) {
         this.type = stix_core_enum_1.StixCoreEnum.SIGHTING;
         if (data) {
             this.attributes = data.attributes;
@@ -13,13 +13,13 @@ class Sighting {
             this.attributes = this.createAttributes();
         }
     }
-    formatDate() {
+    Sighting.prototype.formatDate = function () {
         this.attributes.first_seen = this.attributes.first_seen ?
             new Date(this.attributes.first_seen) : new Date();
         this.attributes.last_seen = this.attributes.last_seen ?
             new Date(this.attributes.last_seen) : new Date();
-    }
-    createAttributes() {
+    };
+    Sighting.prototype.createAttributes = function () {
         return {
             // version: '1',
             // created: moment().format(Constance.DATE_FORMATE),
@@ -34,6 +34,7 @@ class Sighting {
             observed_data_refs: [],
             where_sighted_refs: [],
         };
-    }
-}
+    };
+    return Sighting;
+}());
 exports.Sighting = Sighting;

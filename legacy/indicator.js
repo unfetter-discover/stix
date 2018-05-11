@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class Indicator {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var Indicator = /** @class */ (function () {
+    function Indicator(data) {
         this.type = stix_core_enum_1.StixCoreEnum.INDICATOR;
         if (data) {
             this.attributes = data.attributes;
@@ -13,13 +13,13 @@ class Indicator {
             this.attributes = this.createAttributes();
         }
     }
-    formatDate() {
+    Indicator.prototype.formatDate = function () {
         this.attributes.valid_from = this.attributes.valid_from ?
             new Date(this.attributes.valid_from) : new Date();
         this.attributes.valid_until = this.attributes.valid_until ?
             new Date(this.attributes.valid_until) : new Date();
-    }
-    createAttributes() {
+    };
+    Indicator.prototype.createAttributes = function () {
         return {
             // version: '',
             // created: moment().format(Constance.DATE_FORMATE),
@@ -37,6 +37,7 @@ class Indicator {
             valid_from: new Date(),
             valid_until: new Date(),
         };
-    }
-}
+    };
+    return Indicator;
+}());
 exports.Indicator = Indicator;

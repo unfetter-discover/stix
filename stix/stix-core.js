@@ -9,9 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * This references unfetter stix code and create a circular dependency,
  *  but one cannot extend a typescript string enum class
  */
-class StixCore {
+var StixCore = /** @class */ (function () {
     // TODO: determine if revoked belongs in this base class
-    constructor(data) {
+    function StixCore(data) {
         this.created = new Date().toISOString();
         this.valid_from = new Date().toISOString();
         this.version = 2.0;
@@ -21,8 +21,10 @@ class StixCore {
      * @description generate json from this object
      * @return {string}
      */
-    toJson(delim = '\t') {
+    StixCore.prototype.toJson = function (delim) {
+        if (delim === void 0) { delim = '\t'; }
         return JSON.stringify(this, undefined, delim);
-    }
-}
+    };
+    return StixCore;
+}());
 exports.StixCore = StixCore;

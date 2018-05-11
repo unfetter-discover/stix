@@ -17,3 +17,5 @@ export class StixCoreMock extends Mock<StixCore> {
     }
 
 }
+
+export const StixCoreMockFactory = new StixCoreMock();

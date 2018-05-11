@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_1 = require("./stix");
+var stix_1 = require("./stix");
 /**
  * @description sometimes unfetter wraps stix
  */
-class WrappedStix {
-    constructor() {
+var WrappedStix = /** @class */ (function () {
+    function WrappedStix() {
         this.stix = new stix_1.Stix();
     }
-}
+    return WrappedStix;
+}());
 exports.WrappedStix = WrappedStix;

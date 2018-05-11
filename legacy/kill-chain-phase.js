@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class KillChainPhase {
-}
+var KillChainPhase = /** @class */ (function () {
+    function KillChainPhase() {
+    }
+    return KillChainPhase;
+}());
 exports.KillChainPhase = KillChainPhase;

@@ -12,8 +12,7 @@ export class AssessmentSetMock extends Mock<AssessmentSet> {
      */
     public mockOne(id?: string | undefined): AssessmentSet {
         const names = ['nortmcfee', 'oxygenwhite', 'seriousbeginings'];
-        const baseline = true;
-        return this.mockWithNames(names, baseline, id);
+        return this.mockWithNames(names, id);
     }
 
     /**
@@ -23,14 +22,12 @@ export class AssessmentSetMock extends Mock<AssessmentSet> {
      */
     public mockWithNames(
         capabilityNames = ['nortmcfee', 'oxygenwhite', 'seriousbeginings'],
-        baseline = true,
         id?: string): AssessmentSet {
         const tmp = new AssessmentSet();
         tmp.id = id || this.genId(StixEnum.ASSESSMENT_SET);
         tmp.created_by_ref = this.genId(StixCoreEnum.IDENTITY);
         tmp.description = 'this is my hometown network assessment';
         tmp.name = 'home towne network assessment draft 0';
-        tmp.is_baseline = baseline;
         const objectAssessments = capabilityNames.map((capability) => {
             const objectAssessment = ObjectAssessmentMockFactory.mockOne(capability);
             return objectAssessment;

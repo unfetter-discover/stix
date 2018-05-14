@@ -10,7 +10,6 @@ var AssessmentSet = /** @class */ (function () {
     function AssessmentSet() {
         // created by ref is a identity id
         this.created = new Date().toISOString();
-        this.is_baseline = false;
         this.type = stix_enum_1.StixEnum.ASSESSMENT_SET;
     }
     return AssessmentSet;

@@ -26,23 +26,20 @@ var AssessmentSetMock = /** @class */ (function (_super) {
      */
     AssessmentSetMock.prototype.mockOne = function (id) {
         var names = ['nortmcfee', 'oxygenwhite', 'seriousbeginings'];
-        var baseline = true;
-        return this.mockWithNames(names, baseline, id);
+        return this.mockWithNames(names, id);
     };
     /**
      * @param capabilityNames=['nortmcfee', 'oxygenwhite', 'seriousbeginings']
      * @param baseline=true
      * @returns AssessmentSet
      */
-    AssessmentSetMock.prototype.mockWithNames = function (capabilityNames, baseline, id) {
+    AssessmentSetMock.prototype.mockWithNames = function (capabilityNames, id) {
         if (capabilityNames === void 0) { capabilityNames = ['nortmcfee', 'oxygenwhite', 'seriousbeginings']; }
-        if (baseline === void 0) { baseline = true; }
         var tmp = new assessment_set_1.AssessmentSet();
         tmp.id = id || this.genId(stix_enum_1.StixEnum.ASSESSMENT_SET);
         tmp.created_by_ref = this.genId(stix_core_enum_1.StixCoreEnum.IDENTITY);
         tmp.description = 'this is my hometown network assessment';
         tmp.name = 'home towne network assessment draft 0';
-        tmp.is_baseline = baseline;
         var objectAssessments = capabilityNames.map(function (capability) {
             var objectAssessment = object_assessment_mock_1.ObjectAssessmentMockFactory.mockOne(capability);
             return objectAssessment;

@@ -13,7 +13,6 @@ export class AssessmentSet {
     public created_by_ref: string;
     public description: string;
     public id?: string;
-    public is_baseline = false;
     public modified: string;
     public name: string;
     public readonly type = StixEnum.ASSESSMENT_SET;

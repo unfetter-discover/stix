@@ -11,6 +11,6 @@ export declare class AssessmentSetMock extends Mock<AssessmentSet> {
      * @param baseline=true
      * @returns AssessmentSet
      */
-    mockWithNames(capabilityNames?: string[], baseline?: boolean, id?: string): AssessmentSet;
+    mockWithNames(capabilityNames?: string[], id?: string): AssessmentSet;
 }
 export declare const AssessmentSetMockFactory: AssessmentSetMock;

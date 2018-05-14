@@ -10,7 +10,6 @@ export declare class AssessmentSet {
     created_by_ref: string;
     description: string;
     id?: string;
-    is_baseline: boolean;
     modified: string;
     name: string;
     readonly type: StixEnum;

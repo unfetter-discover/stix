@@ -7,6 +7,8 @@ import { StixEnum } from '../../../unfetter/stix.enum';
  */
 export class Capability extends Stix {
 
+    public category?: string;
+
     /**
      * @description generate an object with default fields for this type
      *  will copy extra fields from the data passed in

@@ -28,11 +28,6 @@ describe('assessment set model', () => {
         expect(cut.created_by_ref).toContain(StixCoreEnum.IDENTITY);
     });
 
-    it('should know if it is a baseline', () => {
-        expect(cut).toBeDefined();
-        expect(cut.is_baseline).toBeTruthy();
-    });
-
     it('should contain assessed object ids', () => {
         expect(cut).toBeDefined();
         expect(cut.assessments).toBeDefined();

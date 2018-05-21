@@ -8,10 +8,20 @@ var UUID = require("uuid");
 var Mock = /** @class */ (function () {
     function Mock() {
     }
+    /**
+     * @param  {} num=1
+     * @param  {string[]} ids?
+     * @returns T
+     */
     Mock.prototype.mockMany = function (num, ids) {
         if (num === void 0) { num = 1; }
         return this.genOverRange(num, ids);
     };
+    /**
+     * @param  {} max=1
+     * @param  {string[]} ids?
+     * @returns T
+     */
     Mock.prototype.genOverRange = function (max, ids) {
         var _this = this;
         if (max === void 0) { max = 1; }
@@ -24,6 +34,10 @@ var Mock = /** @class */ (function () {
         });
         return arr;
     };
+    /**
+     * @description generate a random number
+     * @returns number
+     */
     Mock.prototype.genNumber = function () {
         return Math.round(Math.random() * 90000);
     };

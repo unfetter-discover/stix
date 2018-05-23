@@ -21,11 +21,15 @@ var assessment_eval_type_enum_1 = require("./assessment-eval-type.enum");
  */
 var Assessment = /** @class */ (function (_super) {
     __extends(Assessment, _super);
-    function Assessment() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+    function Assessment(data) {
+        var _this = _super.call(this, data) || this;
         _this.assessmentMeta = new assess3_meta_1.Assess3Meta();
         _this.assessment_objects = [];
         _this.type = stix_enum_1.StixEnum.ASSESSMENT;
+        if (data) {
+            _this.assessmentMeta = data.assessmentMeta || _this.assessmentMeta;
+            _this.assessment_objects = data.assessment_objects || _this.assessment_objects;
+        }
         return _this;
     }
     /**

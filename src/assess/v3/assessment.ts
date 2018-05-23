@@ -13,6 +13,14 @@ export class Assessment extends Stix {
     public assessment_objects = [] as AssessmentObject[];
     public type = StixEnum.ASSESSMENT;
 
+    constructor(data?: any) {
+        super(data);
+        if (data) {
+            this.assessmentMeta = data.assessmentMeta || this.assessmentMeta;
+            this.assessment_objects = data.assessment_objects || this.assessment_objects;
+        }
+    }
+
     /**
      * @description inspects the first assessed object and determines
      *  this objects Assessment type

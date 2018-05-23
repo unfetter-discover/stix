@@ -2,6 +2,7 @@ import { Mock } from '../../mock';
 import { GranularMarking } from '../../stix/granular-marking';
 import { StixEnum } from '../../unfetter/stix.enum';
 import { AssessmentObjectMockFactory } from '../v2/assessment-object.mock';
+import { Assess3Meta } from './assess3-meta';
 import { Assessment } from './assessment';
 
 export class AssessmentMock extends Mock<Assessment> {
@@ -15,7 +16,10 @@ export class AssessmentMock extends Mock<Assessment> {
         tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new GranularMarking()];
-        tmp.assessment_objects  = AssessmentObjectMockFactory.mockMany(5);
+        tmp.assessment_objects = AssessmentObjectMockFactory.mockMany(5);
+        tmp.assessmentMeta = new Assess3Meta();
+        tmp.assessmentMeta.baselineRef = 'baseline' + this.genId();
+        tmp.assessmentMeta.includesIndicators = true;
         return tmp;
     }
 

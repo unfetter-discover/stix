@@ -11,6 +11,7 @@ export declare class Assessment extends Stix {
     assessmentMeta: Assess3Meta;
     assessment_objects: AssessmentObject<Stix>[];
     type: StixEnum;
+    constructor(data?: any);
     /**
      * @description inspects the first assessed object and determines
      *  this objects Assessment type

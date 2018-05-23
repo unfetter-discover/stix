@@ -1,8 +1,8 @@
 export enum AssessmentEvalTypeEnum {
-    CAPABILITIES = 'CAPABILITIES',
-    INDICATORS = 'INDICATORS',
-    MITIGATIONS = 'MITIGATIONS',
-    SENSORS = 'SENSORS',
-    UNASSESSED = 'UNASSESSED',
-    UNKNOWN_TYPE = 'UNKNOWN TYPE',
+    CAPABILITIES = 'Capabilities',
+    INDICATORS = 'Indicators',
+    MITIGATIONS = 'Mitigations',
+    SENSORS = 'Sensors',
+    UNASSESSED = 'Unassessed',
+    UNKNOWN_TYPE = 'Unknown Type',
 }

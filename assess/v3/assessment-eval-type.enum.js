@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var AssessmentEvalTypeEnum;
 (function (AssessmentEvalTypeEnum) {
-    AssessmentEvalTypeEnum["CAPABILITIES"] = "CAPABILITIES";
-    AssessmentEvalTypeEnum["INDICATORS"] = "INDICATORS";
-    AssessmentEvalTypeEnum["MITIGATIONS"] = "MITIGATIONS";
-    AssessmentEvalTypeEnum["SENSORS"] = "SENSORS";
-    AssessmentEvalTypeEnum["UNASSESSED"] = "UNASSESSED";
-    AssessmentEvalTypeEnum["UNKNOWN_TYPE"] = "UNKNOWN TYPE";
+    AssessmentEvalTypeEnum["CAPABILITIES"] = "Capabilities";
+    AssessmentEvalTypeEnum["INDICATORS"] = "Indicators";
+    AssessmentEvalTypeEnum["MITIGATIONS"] = "Mitigations";
+    AssessmentEvalTypeEnum["SENSORS"] = "Sensors";
+    AssessmentEvalTypeEnum["UNASSESSED"] = "Unassessed";
+    AssessmentEvalTypeEnum["UNKNOWN_TYPE"] = "Unknown Type";
 })(AssessmentEvalTypeEnum = exports.AssessmentEvalTypeEnum || (exports.AssessmentEvalTypeEnum = {}));

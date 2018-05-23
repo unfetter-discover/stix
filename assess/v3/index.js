@@ -8,3 +8,5 @@ var assess3_meta_1 = require("./assess3-meta");
 exports.Assess3Meta = assess3_meta_1.Assess3Meta;
 var assessment_1 = require("./assessment");
 exports.Assessment = assessment_1.Assessment;
+var assessment_eval_type_enum_1 = require("./assessment-eval-type.enum");
+exports.AssessmentEvalTypeEnum = assessment_eval_type_enum_1.AssessmentEvalTypeEnum;

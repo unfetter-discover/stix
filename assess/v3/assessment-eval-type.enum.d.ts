@@ -1,0 +1,8 @@
+export declare enum AssessmentEvalTypeEnum {
+    CAPABILITIES = "CAPABILITIES",
+    INDICATORS = "INDICATORS",
+    MITIGATIONS = "MITIGATIONS",
+    SENSORS = "SENSORS",
+    UNASSESSED = "UNASSESSED",
+    UNKNOWN_TYPE = "UNKNOWN TYPE",
+}

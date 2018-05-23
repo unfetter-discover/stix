@@ -14,6 +14,7 @@ var mock_1 = require("../../mock");
 var granular_marking_1 = require("../../stix/granular-marking");
 var stix_enum_1 = require("../../unfetter/stix.enum");
 var assessment_object_mock_1 = require("../v2/assessment-object.mock");
+var assess3_meta_1 = require("./assess3-meta");
 var assessment_1 = require("./assessment");
 var AssessmentMock = /** @class */ (function (_super) {
     __extends(AssessmentMock, _super);
@@ -30,6 +31,9 @@ var AssessmentMock = /** @class */ (function (_super) {
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new granular_marking_1.GranularMarking()];
         tmp.assessment_objects = assessment_object_mock_1.AssessmentObjectMockFactory.mockMany(5);
+        tmp.assessmentMeta = new assess3_meta_1.Assess3Meta();
+        tmp.assessmentMeta.baselineRef = 'baseline' + this.genId();
+        tmp.assessmentMeta.includesIndicators = true;
         return tmp;
     };
     return AssessmentMock;

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class Identity {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var Identity = /** @class */ (function () {
+    function Identity(data) {
         this.type = stix_core_enum_1.StixCoreEnum.IDENTITY;
         if (data) {
             this.attributes = data.attributes;
@@ -12,7 +12,7 @@ class Identity {
             this.attributes = this.createAttributes();
         }
     }
-    createAttributes() {
+    Identity.prototype.createAttributes = function () {
         return {
             // version: '',
             // created: new Date(),
@@ -25,6 +25,7 @@ class Identity {
             // identity_class: '',
             sectors: [],
         };
-    }
-}
+    };
+    return Identity;
+}());
 exports.Identity = Identity;

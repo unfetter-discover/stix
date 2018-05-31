@@ -1,18 +1,12 @@
 "use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var assessed_object_1 = require("./assessed-object");
-exports.AssessedObject = assessed_object_1.AssessedObject;
-var assessment_group_1 = require("./assessment-group");
-exports.AssessmentGroup = assessment_group_1.AssessmentGroup;
-var assessment_set_1 = require("./assessment-set");
-exports.AssessmentSet = assessment_set_1.AssessmentSet;
-var capability_1 = require("./capability");
-exports.Capability = capability_1.Capability;
-var category_1 = require("./category");
-exports.Category = category_1.Category;
-var object_assessment_1 = require("./object-assessment");
-exports.ObjectAssessment = object_assessment_1.ObjectAssessment;
-var question_answer_enum_1 = require("./question-answer.enum");
-exports.QuestionAnswerEnum = question_answer_enum_1.QuestionAnswerEnum;
-var question_1 = require("./question");
-exports.Question = question_1.Question;
+__export(require("./baseline"));
+var assess3_meta_1 = require("./assess3-meta");
+exports.Assess3Meta = assess3_meta_1.Assess3Meta;
+var assessment_1 = require("./assessment");
+exports.Assessment = assessment_1.Assessment;
+var assessment_eval_type_enum_1 = require("./assessment-eval-type.enum");
+exports.AssessmentEvalTypeEnum = assessment_eval_type_enum_1.AssessmentEvalTypeEnum;

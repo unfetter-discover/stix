@@ -13,9 +13,9 @@ export enum StixCoreEnum {
     MARKING_DEFINITION = 'marking-definition',
     OBSERVED_DATA = 'observed-data',
     REPORT = 'report',
-    THREAT_REPORT = 'threat-report',
+    SIGHTING = 'sighting',
     THREAT_ACTOR = 'threat-actor',
+    THREAT_REPORT = 'threat-report',
     TOOL = 'tool',
     VULNERABILITY = 'vulnerability',
-    SIGHTING = 'sighting',
 }

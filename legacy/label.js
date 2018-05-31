@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Label {
-}
+var Label = /** @class */ (function () {
+    function Label() {
+    }
+    return Label;
+}());
 exports.Label = Label;

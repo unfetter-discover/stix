@@ -4,7 +4,7 @@ import { MetaProps } from './meta-props';
 import { Stix } from './stix';
 import { UnfetterStixProperties } from './unfetter-stix-properties';
 /**
- * @description attack pattern
+ * @description identity
  * @see https://oasis-open.github.io/cti-documentation/stix/intro
  */
 export declare class UnfetterIdentity extends Identity implements UnfetterStixProperties {

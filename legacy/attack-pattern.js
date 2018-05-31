@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class AttackPattern {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var AttackPattern = /** @class */ (function () {
+    function AttackPattern(data) {
         this.type = stix_core_enum_1.StixCoreEnum.ATTACK_PATTERN;
         if (data) {
             this.attributes = data.attributes;
@@ -12,7 +12,7 @@ class AttackPattern {
             this.attributes = this.createAttributes();
         }
     }
-    createAttributes() {
+    AttackPattern.prototype.createAttributes = function () {
         return {
             // version: '',
             // created: new Date(),
@@ -23,6 +23,7 @@ class AttackPattern {
             external_references: [],
             kill_chain_phases: [],
         };
-    }
-}
+    };
+    return AttackPattern;
+}());
 exports.AttackPattern = AttackPattern;

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class ObservedData {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var ObservedData = /** @class */ (function () {
+    function ObservedData(data) {
         this.type = stix_core_enum_1.StixCoreEnum.MALWARE;
         if (data) {
             this.attributes = data.attributes;
@@ -12,7 +12,7 @@ class ObservedData {
             this.attributes = this.createAttributes();
         }
     }
-    createAttributes() {
+    ObservedData.prototype.createAttributes = function () {
         return {
             // version: '1',
             // created: moment().format(Constance.DATE_FORMATE),
@@ -22,6 +22,7 @@ class ObservedData {
             labels: [],
             external_references: [],
         };
-    }
-}
+    };
+    return ObservedData;
+}());
 exports.ObservedData = ObservedData;

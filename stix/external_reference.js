@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class ExternalReference {
-}
+var ExternalReference = /** @class */ (function () {
+    function ExternalReference() {
+    }
+    return ExternalReference;
+}());
 exports.ExternalReference = ExternalReference;

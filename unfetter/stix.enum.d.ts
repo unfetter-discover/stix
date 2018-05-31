@@ -9,13 +9,13 @@
  * ```
  */
 export declare enum StixEnum {
+    ASSESSED_OBJECT = "x-unfetter-assessed-object",
     ASSESSMENT = "x-unfetter-assessment",
     ASSESSMENT_GROUP = "x-unfetter-assessment-group",
     ASSESSMENT_SET = "x-unfetter-assessment-set",
-    CAPABILITY = "x-unfetter-capapbility",
-    CATEGORY = "x-unfetter-capability-category",
+    CAPABILITY = "x-unfetter-capability",
+    CATEGORY = "x-unfetter-category",
     OBJECT_ASSESSMENT = "x-unfetter-object-assessment",
-    ASSESSED_OBJECT = "x-unfetter-assessed-object",
-    SENSOR = "x-unfetter-sensor",
     QUESTION = "x-unfetter-question",
+    SENSOR = "x-unfetter-sensor",
 }

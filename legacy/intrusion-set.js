@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class IntrusionSet {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var IntrusionSet = /** @class */ (function () {
+    function IntrusionSet(data) {
         this.type = stix_core_enum_1.StixCoreEnum.INTRUSION_SET;
         if (data) {
             this.attributes = data.attributes;
@@ -13,13 +13,13 @@ class IntrusionSet {
             this.attributes = this.createAttributes();
         }
     }
-    formatDate() {
+    IntrusionSet.prototype.formatDate = function () {
         this.attributes.first_seen = this.attributes.first_seen ?
             new Date(this.attributes.first_seen) : new Date();
         this.attributes.last_seen = this.attributes.last_seen ?
             new Date(this.attributes.last_seen) : new Date();
-    }
-    createAttributes() {
+    };
+    IntrusionSet.prototype.createAttributes = function () {
         return {
             // version: '',
             // created: moment().format(Constance.DATE_FORMATE),
@@ -39,6 +39,7 @@ class IntrusionSet {
             external_references: [],
             kill_chain_phases: [],
         };
-    }
-}
+    };
+    return IntrusionSet;
+}());
 exports.IntrusionSet = IntrusionSet;

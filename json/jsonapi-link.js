@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class JsonApiLink {
-}
+var JsonApiLink = /** @class */ (function () {
+    function JsonApiLink() {
+    }
+    return JsonApiLink;
+}());
 exports.JsonApiLink = JsonApiLink;

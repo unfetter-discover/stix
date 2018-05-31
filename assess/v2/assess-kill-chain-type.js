@@ -3,10 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @description
  */
-class AssessKillChainType {
-    constructor() {
+var AssessKillChainType = /** @class */ (function () {
+    function AssessKillChainType() {
         this.questions = [];
         this.objects = [];
     }
-}
+    return AssessKillChainType;
+}());
 exports.AssessKillChainType = AssessKillChainType;

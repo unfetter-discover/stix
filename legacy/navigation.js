@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Navigation {
-}
+var Navigation = /** @class */ (function () {
+    function Navigation() {
+    }
+    return Navigation;
+}());
 exports.Navigation = Navigation;

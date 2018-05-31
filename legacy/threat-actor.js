@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stix_core_enum_1 = require("../stix/stix-core.enum");
-class ThreatActor {
-    constructor(data) {
+var stix_core_enum_1 = require("../stix/stix-core.enum");
+var ThreatActor = /** @class */ (function () {
+    function ThreatActor(data) {
         this.type = stix_core_enum_1.StixCoreEnum.THREAT_ACTOR;
         if (data) {
             this.attributes = data.attributes;
@@ -12,7 +12,7 @@ class ThreatActor {
             this.attributes = this.createAttributes();
         }
     }
-    createAttributes() {
+    ThreatActor.prototype.createAttributes = function () {
         return {
             // version: '',
             // created: new Date(),
@@ -23,6 +23,7 @@ class ThreatActor {
             external_references: [],
             kill_chain_phases: [],
         };
-    }
-}
+    };
+    return ThreatActor;
+}());
 exports.ThreatActor = ThreatActor;

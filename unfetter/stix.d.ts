@@ -10,6 +10,7 @@ import { UnfetterStixProperties } from './unfetter-stix-properties';
  * @see https://stixproject.github.io/
  */
 export declare class Stix extends StixCore implements UnfetterStixProperties {
-    metaProperties: MetaProps;
-    extendedProperties: Dictionary;
+    metaProperties?: MetaProps;
+    extendedProperties?: Dictionary;
+    x_unfetter_sophistication_level?: string;
 }

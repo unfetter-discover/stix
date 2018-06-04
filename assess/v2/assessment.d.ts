@@ -9,4 +9,5 @@ export declare class Assessment extends Stix {
     assessmentMeta: AssessmentMeta;
     assessment_objects: AssessmentObject<Stix>[];
     type: StixEnum;
+    constructor(data?: any);
 }

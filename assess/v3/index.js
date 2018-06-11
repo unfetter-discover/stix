@@ -10,3 +10,5 @@ var assessment_1 = require("./assessment");
 exports.Assessment = assessment_1.Assessment;
 var assessment_eval_type_enum_1 = require("./assessment-eval-type.enum");
 exports.AssessmentEvalTypeEnum = assessment_eval_type_enum_1.AssessmentEvalTypeEnum;
+var risk_by_kill_chain_1 = require("./risk-by-kill-chain");
+exports.RiskByKillChain = risk_by_kill_chain_1.RiskByKillChain;

@@ -34,8 +34,8 @@ describe('object assessment model', () => {
 
     it('should contain assessed objects', () => {
         expect(cut).toBeDefined();
-        expect(cut.assessments_objects).toBeDefined();
-        expect(cut.assessments_objects.length).toBeGreaterThanOrEqual(2);
+        expect(cut.assessed_objects).toBeDefined();
+        expect(cut.assessed_objects.length).toBeGreaterThanOrEqual(2);
     });
 
 });

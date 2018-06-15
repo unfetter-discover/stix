@@ -8,7 +8,7 @@ import { AssessedObject } from './assessed-object';
  */
 export class ObjectAssessment extends Stix {
     // AssessedObject has a attack pattern ids
-    public assessments_objects: AssessedObject[];
+    public assessed_objects: AssessedObject[];
     // object ref is a capability id
     public object_ref: string;
 

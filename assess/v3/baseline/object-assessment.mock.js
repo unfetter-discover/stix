@@ -25,7 +25,7 @@ var ObjectAssessmentMock = /** @class */ (function (_super) {
         var tmp = new object_assessment_1.ObjectAssessment();
         tmp.id = this.genId(stix_enum_1.StixEnum.OBJECT_ASSESSMENT);
         tmp.created_by_ref = this.genId(stix_core_enum_1.StixCoreEnum.IDENTITY);
-        tmp.assessments_objects = assessed_object_mock_1.AssessedObjectMockFactory.mockMany(3);
+        tmp.assessed_objects = assessed_object_mock_1.AssessedObjectMockFactory.mockMany(3);
         tmp.object_ref = capability_mock_1.CapabilityMockFactory.mockOne(capabilityName).id || '';
         return tmp;
     };

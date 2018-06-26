@@ -6,5 +6,6 @@ var QuestionAnswerEnum;
     QuestionAnswerEnum["MEDIUM"] = "M";
     QuestionAnswerEnum["LOW"] = "L";
     QuestionAnswerEnum["NOT_APPLICABLE"] = "NA";
-    QuestionAnswerEnum["UNANSWERED"] = "N";
+    QuestionAnswerEnum["UNANSWERED"] = "";
+    QuestionAnswerEnum["NONE"] = "N";
 })(QuestionAnswerEnum = exports.QuestionAnswerEnum || (exports.QuestionAnswerEnum = {}));

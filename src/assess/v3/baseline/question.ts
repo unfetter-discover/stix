@@ -22,8 +22,10 @@ export class Question {
                 return 'SIGNIFICANT';
             case (QuestionAnswerEnum.NOT_APPLICABLE):
                 return 'NOT APPLICABLE';
+            case (QuestionAnswerEnum.NONE):
+                return 'NONE';
             case (QuestionAnswerEnum.UNANSWERED):
-                return 'UNANSWERED';
+                return '';
         }
     }
 

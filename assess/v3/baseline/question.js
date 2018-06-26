@@ -20,8 +20,10 @@ var Question = /** @class */ (function () {
                 return 'SIGNIFICANT';
             case (question_answer_enum_1.QuestionAnswerEnum.NOT_APPLICABLE):
                 return 'NOT APPLICABLE';
+            case (question_answer_enum_1.QuestionAnswerEnum.NONE):
+                return 'NONE';
             case (question_answer_enum_1.QuestionAnswerEnum.UNANSWERED):
-                return 'UNANSWERED';
+                return '';
         }
     };
     /**

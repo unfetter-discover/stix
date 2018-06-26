@@ -3,5 +3,6 @@ export declare enum QuestionAnswerEnum {
     MEDIUM = "M",
     LOW = "L",
     NOT_APPLICABLE = "NA",
-    UNANSWERED = "N",
+    UNANSWERED = "",
+    NONE = "N",
 }

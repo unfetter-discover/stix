@@ -25,7 +25,7 @@ export class Question {
             case (QuestionAnswerEnum.NONE):
                 return 'NONE';
             case (QuestionAnswerEnum.UNANSWERED):
-                return '';
+                return 'UNANSWERED';
         }
     }
 

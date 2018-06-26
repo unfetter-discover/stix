@@ -23,7 +23,7 @@ var Question = /** @class */ (function () {
             case (question_answer_enum_1.QuestionAnswerEnum.NONE):
                 return 'NONE';
             case (question_answer_enum_1.QuestionAnswerEnum.UNANSWERED):
-                return '';
+                return 'UNANSWERED';
         }
     };
     /**

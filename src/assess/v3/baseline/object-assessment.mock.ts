@@ -10,7 +10,7 @@ export class ObjectAssessmentMock extends Mock<ObjectAssessment> {
         const tmp = new ObjectAssessment();
         tmp.id = this.genId(StixEnum.OBJECT_ASSESSMENT);
         tmp.created_by_ref = this.genId(StixCoreEnum.IDENTITY);
-        tmp.assessments_objects = AssessedObjectMockFactory.mockMany(3);
+        tmp.assessed_objects = AssessedObjectMockFactory.mockMany(3);
         tmp.object_ref = CapabilityMockFactory.mockOne(capabilityName).id || '';
         return tmp;
     }

@@ -1,8 +1,6 @@
-import { StixCoreEnum } from './stix-core.enum';
-export declare class MarkingDefinition {
+import { StixCore } from './stix-core';
+export declare class MarkingDefinition extends StixCore {
     definition_type: string;
     definition: any;
-    created: Date;
-    readonly type: StixCoreEnum;
-    id: string;
+    constructor(data?: StixCore);
 }

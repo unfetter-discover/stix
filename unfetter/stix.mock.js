@@ -19,7 +19,7 @@ var StixMock = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     StixMock.prototype.mockOne = function (id) {
-        var stix = new stix_1.Stix();
+        var stix = new stix_1.ExpandedStix();
         var number = this.genNumber();
         stix.id = id || "stix--" + number;
         stix.modified = new Date().toISOString();

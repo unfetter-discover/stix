@@ -13,6 +13,7 @@ import { StixCoreEnum } from './stix-core.enum';
  *  but one cannot extend a typescript string enum class
  */
 export declare class StixCore<T extends StixCoreEnum | StixEnum = StixCoreEnum | StixEnum> {
+    [x_property_index: string]: any;
     created: Date | string;
     created_by_ref?: string;
     external_references?: ExternalReference[];

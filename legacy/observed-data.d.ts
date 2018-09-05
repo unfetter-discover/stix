@@ -19,5 +19,5 @@ export declare class ObservedData {
         created_by_ref: string;
     };
     constructor(data?: ObservedData);
-    private createAttributes();
+    private createAttributes;
 }

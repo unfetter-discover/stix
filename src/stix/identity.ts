@@ -11,10 +11,11 @@ import { StixCore } from './stix-core';
 export class Identity extends StixCore {
     public readonly type = StixCoreEnum.IDENTITY;
     public identity_class: string;
+    public name: string;
 
     // TODO: define openvocab
-    public sectors: OpenVocab[] | string[];
-    public contact_information: string;
+    public sectors?: OpenVocab[] | string[];
+    public contact_information?: string;
 
     /**
      * @param data

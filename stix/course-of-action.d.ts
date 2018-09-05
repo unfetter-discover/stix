@@ -1,10 +1,10 @@
-import { StixCore } from './stix-core';
+import { StixExpanded } from './stix-core';
 /**
  * @description
  */
-export declare class CourseOfAction extends StixCore {
+export declare class CourseOfAction extends StixExpanded {
     /**
      * @param data
      */
-    constructor(data?: StixCore);
+    constructor(data?: StixExpanded);
 }

@@ -10,8 +10,9 @@ import { StixCore } from './stix-core';
 export declare class Identity extends StixCore {
     readonly type: StixCoreEnum;
     identity_class: string;
-    sectors: OpenVocab[] | string[];
-    contact_information: string;
+    name: string;
+    sectors?: OpenVocab[] | string[];
+    contact_information?: string;
     /**
      * @param data
      */

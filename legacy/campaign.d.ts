@@ -16,5 +16,5 @@ export declare class Campaign {
     };
     constructor(data?: Campaign);
     formatDate(): void;
-    private createAttributes();
+    private createAttributes;
 }

@@ -14,10 +14,6 @@ describe('stix core model', function () {
     it('should have a constructor', function () {
         expect(stix).toBeDefined();
     });
-    it('should know have a version', function () {
-        expect(stix).toBeDefined();
-        expect(stix.version).toEqual(2);
-    });
     it('should know its own type', function () {
         expect(stix).toBeDefined();
         expect(stix.type).toEqual(stix_core_enum_1.StixCoreEnum.IDENTITY);

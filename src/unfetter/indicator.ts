@@ -17,7 +17,7 @@ export class UnfetterIndicator extends Indicator implements UnfetterStixProperti
      */
     constructor(data?: object) {
         super(data);
-        this.type = StixCoreEnum.ATTACK_PATTERN;
+        this.type = StixCoreEnum.INDICATOR;
     }
 
 }

@@ -23,7 +23,7 @@ var UnfetterIndicator = /** @class */ (function (_super) {
      */
     function UnfetterIndicator(data) {
         var _this = _super.call(this, data) || this;
-        _this.type = stix_core_enum_1.StixCoreEnum.ATTACK_PATTERN;
+        _this.type = stix_core_enum_1.StixCoreEnum.INDICATOR;
         return _this;
     }
     return UnfetterIndicator;

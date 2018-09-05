@@ -1,9 +1,9 @@
-import { Stix } from '../../../unfetter/stix';
+import { ExpandedStix } from '../../../unfetter/stix';
 /**
  * @description a capability could represent a product, ex. AntiVirus software
  *  This object is an Unfetter Stix extension
  */
-export declare class Capability extends Stix {
+export declare class Capability extends ExpandedStix {
     category?: string;
     /**
      * @description generate an object with default fields for this type

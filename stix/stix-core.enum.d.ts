@@ -17,5 +17,5 @@ export declare enum StixCoreEnum {
     THREAT_ACTOR = "threat-actor",
     THREAT_REPORT = "threat-report",
     TOOL = "tool",
-    VULNERABILITY = "vulnerability",
+    VULNERABILITY = "vulnerability"
 }

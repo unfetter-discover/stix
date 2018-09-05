@@ -1,4 +1,4 @@
-import { Stix } from '../../../unfetter/stix';
+import { ExpandedStix } from '../../../unfetter/stix';
 import { StixEnum } from '../../../unfetter/stix.enum';
 import { AssessedObject } from './assessed-object';
 
@@ -6,7 +6,7 @@ import { AssessedObject } from './assessed-object';
  *  @description Category is a generic bin name for a real products capability, ex. Network Monitor
  *  This object is an Unfetter Stix extension
  */
-export class Category extends Stix {
+export class Category extends ExpandedStix {
 
     public assessed_objects: AssessedObject[];
 

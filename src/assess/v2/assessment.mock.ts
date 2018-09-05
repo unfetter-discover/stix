@@ -12,7 +12,6 @@ export class AssessmentMock extends Mock<Assessment> {
         tmp.id = this.genId(StixEnum.ASSESSMENT);
         tmp.name = `zone 1 cluster ${number} assessment 2`;
         tmp.description = `description-${number}`;
-        tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new GranularMarking()];
         tmp.assessment_objects  = AssessmentObjectMockFactory.mockMany(5);

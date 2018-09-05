@@ -21,5 +21,5 @@ export declare class Sighting {
     };
     constructor(data?: Sighting);
     formatDate(): void;
-    private createAttributes();
+    private createAttributes;
 }

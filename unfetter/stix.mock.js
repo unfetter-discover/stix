@@ -22,9 +22,6 @@ var StixMock = /** @class */ (function (_super) {
         var stix = new stix_1.Stix();
         var number = this.genNumber();
         stix.id = id || "stix--" + number;
-        stix.name = "name-" + number;
-        stix.description = "description-" + number;
-        stix.object_refs = ['ref1', 'ref2'];
         stix.modified = new Date().toISOString();
         stix.granular_markings = [new granular_marking_1.GranularMarking()];
         return stix;

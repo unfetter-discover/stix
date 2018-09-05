@@ -25,7 +25,6 @@ var UnfetterIndicatorMock = /** @class */ (function (_super) {
         tmp.id = this.genId(stix_core_enum_1.StixCoreEnum.INDICATOR);
         tmp.name = "SMB Copy and Transfer - " + number;
         tmp.description = "description " + number;
-        tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new granular_marking_1.GranularMarking()];
         return tmp;

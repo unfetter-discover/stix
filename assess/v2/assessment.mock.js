@@ -26,7 +26,6 @@ var AssessmentMock = /** @class */ (function (_super) {
         tmp.id = this.genId(stix_enum_1.StixEnum.ASSESSMENT);
         tmp.name = "zone 1 cluster " + number + " assessment 2";
         tmp.description = "description-" + number;
-        tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new granular_marking_1.GranularMarking()];
         tmp.assessment_objects = assessment_object_mock_1.AssessmentObjectMockFactory.mockMany(5);

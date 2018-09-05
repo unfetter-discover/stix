@@ -30,5 +30,5 @@ var Category = /** @class */ (function (_super) {
         return _this;
     }
     return Category;
-}(stix_1.Stix));
+}(stix_1.ExpandedStix));
 exports.Category = Category;

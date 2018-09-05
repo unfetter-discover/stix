@@ -4,5 +4,5 @@ export declare enum QuestionAnswerEnum {
     LOW = "L",
     NOT_APPLICABLE = "NA",
     UNANSWERED = "",
-    NONE = "N",
+    NONE = "N"
 }

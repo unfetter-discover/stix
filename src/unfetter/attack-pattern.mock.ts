@@ -11,7 +11,6 @@ export class AttackPatternMock extends Mock<AttackPattern> {
         tmp.id = this.genId(StixCoreEnum.ATTACK_PATTERN);
         tmp.name = `attack-pattern${number}`;
         tmp.description = `description-${number}`;
-        tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new GranularMarking()];
         return tmp;

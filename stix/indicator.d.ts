@@ -1,11 +1,14 @@
-import { StixCore } from './stix-core';
+import { KillChainPhase } from './kill-chain-phase';
+import { KillChain, StixExpanded } from './stix-core';
+import { StixCoreEnum } from './stix-core.enum';
 /**
  *
  */
-export declare class Indicator extends StixCore {
-    pattern_lang: string;
+export declare class Indicator extends StixExpanded<StixCoreEnum.INDICATOR> implements KillChain {
+    kill_chain_phases?: KillChainPhase[];
     pattern: string;
-    valid_until: string;
+    valid_from: Date | string;
+    valid_until?: Date | string;
     /**
      *
      * @param data

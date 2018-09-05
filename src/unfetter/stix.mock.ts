@@ -8,9 +8,6 @@ export class StixMock extends Mock<Stix> {
         const stix = new Stix();
         const number = this.genNumber();
         stix.id = id || `stix--${number}`;
-        stix.name = `name-${number}`;
-        stix.description = `description-${number}`;
-        stix.object_refs = ['ref1', 'ref2'];
         stix.modified = new Date().toISOString();
         stix.granular_markings = [new GranularMarking()];
         return stix;

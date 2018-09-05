@@ -20,10 +20,6 @@ describe('stix model', function () {
         expect(stix.metaProperties);
     });
     it('should generate json', function () {
-        expect(stix.toJson()).toContain('description');
-        expect(stix.toJson()).toContain('name');
         expect(stix.toJson()).toContain('stix--');
-        expect(stix.toJson()).toContain('ref1');
-        expect(stix.toJson()).toContain('ref2');
     });
 });

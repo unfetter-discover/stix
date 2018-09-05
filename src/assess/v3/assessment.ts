@@ -1,4 +1,4 @@
-import { Stix } from '../../unfetter/stix';
+import { ExpandedStix } from '../../unfetter/stix';
 import { StixEnum } from '../../unfetter/stix.enum';
 import { AssessmentObject } from '../v2/assessment-object';
 import { Assess3Meta } from './assess3-meta';
@@ -8,7 +8,7 @@ import { AssessmentEvalTypeEnum } from './assessment-eval-type.enum';
  * @description An assessment represents subjective scoring;
  *  of mitigations, indicator, and capabilities in ones environment
  */
-export class Assessment extends Stix {
+export class Assessment extends ExpandedStix {
     public assessmentMeta = new Assess3Meta();
     public assessment_objects = [] as AssessmentObject[];
     public type = StixEnum.ASSESSMENT;

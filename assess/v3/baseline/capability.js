@@ -29,5 +29,5 @@ var Capability = /** @class */ (function (_super) {
         return _this;
     }
     return Capability;
-}(stix_1.Stix));
+}(stix_1.ExpandedStix));
 exports.Capability = Capability;

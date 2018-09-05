@@ -1,10 +1,11 @@
-import { StixCore } from './stix-core';
+import { StixExpanded } from './stix-core';
 /**
  * @description
  */
-export declare class Report extends StixCore {
+export declare class Report extends StixExpanded {
+    object_refs?: string[];
     /**
      * @param data
      */
-    constructor(data?: StixCore);
+    constructor(data?: StixExpanded);
 }

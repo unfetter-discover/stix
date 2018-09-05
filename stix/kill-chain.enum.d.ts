@@ -7,5 +7,5 @@
 export declare enum KillChainEnum {
     MITRE_ATTACK = "mitre-attack",
     LH_CTF = "lh-ctf",
-    NTCTF = "ntctf",
+    NTCTF = "ntctf"
 }

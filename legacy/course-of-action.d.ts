@@ -16,5 +16,5 @@ export declare class CourseOfAction {
         created_by_ref: string;
     };
     constructor(data?: CourseOfAction);
-    private createAttributes();
+    private createAttributes;
 }

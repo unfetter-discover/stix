@@ -22,5 +22,5 @@ export declare class AttackPattern {
         created_by_ref: string;
     };
     constructor(data?: AttackPattern);
-    private createAttributes();
+    private createAttributes;
 }

@@ -17,5 +17,5 @@ export declare class ThreatActor {
         created_by_ref: string;
     };
     constructor(data?: ThreatActor);
-    private createAttributes();
+    private createAttributes;
 }

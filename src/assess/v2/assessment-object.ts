@@ -1,10 +1,10 @@
-import { Stix } from '../../unfetter/stix';
+import { ExpandedStix, Stix } from '../../unfetter/stix';
 import { AssessmentQuestion } from './assessment-question';
 
 /**
  * @description
  */
-export class AssessmentObject<T extends Partial<Stix> = Stix> {
+export class AssessmentObject<T extends Partial<ExpandedStix> = any> {
 
     public constructor(
         public risk = -1,

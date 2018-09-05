@@ -17,11 +17,6 @@ describe('report stix model', () => {
         expect(stix).toBeDefined();
     });
 
-    it('should know have a version', () => {
-        expect(stix).toBeDefined();
-        expect(stix.version).toEqual(2);
-    });
-
     it('should know its own type', () => {
         expect(stix).toBeDefined();
         expect(stix.type).toEqual(StixCoreEnum.REPORT);

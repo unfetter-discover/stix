@@ -26,5 +26,5 @@ export declare class IntrusionSet {
     };
     constructor(data?: IntrusionSet);
     formatDate(): void;
-    private createAttributes();
+    private createAttributes;
 }

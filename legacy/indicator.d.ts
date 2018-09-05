@@ -24,5 +24,5 @@ export declare class Indicator {
     };
     constructor(data?: Indicator);
     formatDate(): void;
-    private createAttributes();
+    private createAttributes;
 }

@@ -1,10 +1,10 @@
-import { Stix } from '../../../unfetter/stix';
+import { ExpandedStix } from '../../../unfetter/stix';
 import { AssessedObject } from './assessed-object';
 /**
  * @description Object assessment represents attack pattern to capability answers
  *  This object is an Unfetter Stix extension
  */
-export declare class ObjectAssessment extends Stix {
+export declare class ObjectAssessment extends ExpandedStix {
     assessed_objects: AssessedObject[];
     object_ref: string;
     /**

@@ -1,4 +1,4 @@
-import { Stix } from '../../../unfetter/stix';
+import { ExpandedStix } from '../../../unfetter/stix';
 import { StixEnum } from '../../../unfetter/stix.enum';
 import { AssessedObject } from './assessed-object';
 
@@ -6,7 +6,7 @@ import { AssessedObject } from './assessed-object';
  * @description Object assessment represents attack pattern to capability answers
  *  This object is an Unfetter Stix extension
  */
-export class ObjectAssessment extends Stix {
+export class ObjectAssessment extends ExpandedStix {
     // AssessedObject has a attack pattern ids
     public assessed_objects: AssessedObject[];
     // object ref is a capability id

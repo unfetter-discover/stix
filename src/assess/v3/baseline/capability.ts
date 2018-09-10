@@ -1,11 +1,11 @@
-import { Stix } from '../../../unfetter/stix';
+import { ExpandedStix } from '../../../unfetter/stix';
 import { StixEnum } from '../../../unfetter/stix.enum';
 
 /**
  * @description a capability could represent a product, ex. AntiVirus software
  *  This object is an Unfetter Stix extension
  */
-export class Capability extends Stix {
+export class Capability extends ExpandedStix {
 
     public category?: string;
 

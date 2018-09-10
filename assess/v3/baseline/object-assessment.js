@@ -29,5 +29,5 @@ var ObjectAssessment = /** @class */ (function (_super) {
         return _this;
     }
     return ObjectAssessment;
-}(stix_1.Stix));
+}(stix_1.ExpandedStix));
 exports.ObjectAssessment = ObjectAssessment;

@@ -12,7 +12,6 @@ export class UnfetterIndicatorMock extends Mock<UnfetterIndicator> {
         tmp.id = this.genId(StixCoreEnum.INDICATOR);
         tmp.name = `SMB Copy and Transfer - ${number}`;
         tmp.description = `description ${number}`;
-        tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new GranularMarking()];
         return tmp;

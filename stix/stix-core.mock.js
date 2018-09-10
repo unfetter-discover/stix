@@ -19,7 +19,7 @@ var StixCoreMock = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     StixCoreMock.prototype.mockOne = function () {
-        var stix = new stix_core_1.StixCore();
+        var stix = new stix_core_1.StixExpanded();
         var number = this.genNumber();
         stix.id = "stix-" + number;
         stix.name = "name-" + number;

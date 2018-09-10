@@ -18,5 +18,5 @@ export declare class Identity {
         contact_information: string;
     };
     constructor(data?: Identity);
-    private createAttributes();
+    private createAttributes;
 }

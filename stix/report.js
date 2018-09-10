@@ -26,5 +26,5 @@ var Report = /** @class */ (function (_super) {
         return _this;
     }
     return Report;
-}(stix_core_1.StixCore));
+}(stix_core_1.StixExpanded));
 exports.Report = Report;

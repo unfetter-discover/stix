@@ -1,6 +1,6 @@
 import { Mock } from '../mock';
-import { Stix } from './stix';
-export declare class StixMock extends Mock<Stix> {
-    mockOne(id?: string): Stix;
+import { ExpandedStix } from './stix';
+export declare class StixMock extends Mock<ExpandedStix> {
+    mockOne(id?: string): ExpandedStix;
 }
 export declare const StixMockFactory: StixMock;

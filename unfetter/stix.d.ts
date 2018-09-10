@@ -1,5 +1,5 @@
 import { Dictionary } from '../common/dictionary';
-import { StixCore } from '../stix/stix-core';
+import { StixCore, StixExpanded } from '../stix/stix-core';
 import { MetaProps } from './meta-props';
 import { UnfetterStixProperties } from './unfetter-stix-properties';
 /**
@@ -10,6 +10,11 @@ import { UnfetterStixProperties } from './unfetter-stix-properties';
  * @see https://stixproject.github.io/
  */
 export declare class Stix extends StixCore implements UnfetterStixProperties {
+    metaProperties?: MetaProps;
+    extendedProperties?: Dictionary;
+    x_unfetter_sophistication_level?: string;
+}
+export declare class ExpandedStix extends StixExpanded implements UnfetterStixProperties {
     metaProperties?: MetaProps;
     extendedProperties?: Dictionary;
     x_unfetter_sophistication_level?: string;

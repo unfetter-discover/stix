@@ -4,5 +4,5 @@ export declare enum AssessmentEvalTypeEnum {
     MITIGATIONS = "Mitigations",
     SENSORS = "Sensors",
     UNASSESSED = "Unassessed",
-    UNKNOWN_TYPE = "Unknown Type",
+    UNKNOWN_TYPE = "Unknown Type"
 }

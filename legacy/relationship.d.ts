@@ -18,5 +18,5 @@ export declare class Relationship {
         created_by_ref: string;
     };
     constructor(data?: any);
-    private createAttributes();
+    private createAttributes;
 }

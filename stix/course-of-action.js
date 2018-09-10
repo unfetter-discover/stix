@@ -26,5 +26,5 @@ var CourseOfAction = /** @class */ (function (_super) {
         return _this;
     }
     return CourseOfAction;
-}(stix_core_1.StixCore));
+}(stix_core_1.StixExpanded));
 exports.CourseOfAction = CourseOfAction;

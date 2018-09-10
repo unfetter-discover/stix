@@ -14,10 +14,6 @@ describe('granular markings stix model', () => {
         expect(stix).toBeDefined();
     });
 
-    it('should know have a version', () => {
-        expect(stix).toBeDefined();
-    });
-
     it('should know its own type', () => {
         expect(stix).toBeDefined();
         expect(stix.marking_ref.startsWith(StixCoreEnum.MARKING_DEFINITION)).toBeTruthy();

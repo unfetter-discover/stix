@@ -13,25 +13,30 @@ import { StixCoreEnum } from './stix-core.enum';
  *  but one cannot extend a typescript string enum class
  */
 export declare class StixCore<T extends StixCoreEnum | StixEnum = StixCoreEnum | StixEnum> {
-    created: string;
-    created_by_ref: string;
-    description: string;
-    external_references: ExternalReference[];
-    granular_markings: GranularMarking[];
+    [x_property_index: string]: any;
+    created: Date | string;
+    created_by_ref?: string;
+    external_references?: ExternalReference[];
+    granular_markings?: GranularMarking[];
     id?: string;
-    kill_chain_phases?: KillChainPhase[];
-    labels: string[];
+    labels?: string[];
     modified: string;
-    name: string;
-    object_refs?: string[];
-    pattern: string;
+    revoked?: boolean;
     type: T;
-    valid_from: string;
-    version: number;
     constructor(data?: object);
     /**
      * @description generate json from this object
      * @return {string}
      */
     toJson(delim?: string): string;
+}
+/**
+ * @description Most, but not all STIX classes, have name and description properties
+ */
+export declare class StixExpanded<T extends StixCoreEnum | StixEnum = StixCoreEnum | StixEnum> extends StixCore<T> {
+    description?: string;
+    name: string;
+}
+export interface KillChain {
+    kill_chain_phases?: KillChainPhase[];
 }

@@ -21,5 +21,5 @@ export declare class Tool {
         created_by_ref: string;
     };
     constructor(data?: Tool);
-    private createAttributes();
+    private createAttributes;
 }

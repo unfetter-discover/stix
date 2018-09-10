@@ -27,5 +27,5 @@ var AttackPattern = /** @class */ (function (_super) {
         return _this;
     }
     return AttackPattern;
-}(stix_core_1.StixCore));
+}(stix_core_1.StixExpanded));
 exports.AttackPattern = AttackPattern;

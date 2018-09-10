@@ -4,7 +4,7 @@ export declare enum ResourceLevel {
     contest = "contest",
     team = "team",
     organization = "organization",
-    government = "government",
+    government = "government"
 }
 export declare namespace ResourceLevel {
     function values(): ResourceLevel[];

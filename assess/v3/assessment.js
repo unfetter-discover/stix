@@ -68,5 +68,5 @@ var Assessment = /** @class */ (function (_super) {
         return retVal;
     };
     return Assessment;
-}(stix_1.Stix));
+}(stix_1.ExpandedStix));
 exports.Assessment = Assessment;

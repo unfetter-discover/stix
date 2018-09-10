@@ -19,12 +19,9 @@ var StixMock = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     StixMock.prototype.mockOne = function (id) {
-        var stix = new stix_1.Stix();
+        var stix = new stix_1.ExpandedStix();
         var number = this.genNumber();
         stix.id = id || "stix--" + number;
-        stix.name = "name-" + number;
-        stix.description = "description-" + number;
-        stix.object_refs = ['ref1', 'ref2'];
         stix.modified = new Date().toISOString();
         stix.granular_markings = [new granular_marking_1.GranularMarking()];
         return stix;

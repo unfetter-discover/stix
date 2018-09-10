@@ -25,7 +25,6 @@ var AttackPatternMock = /** @class */ (function (_super) {
         tmp.id = this.genId(stix_core_enum_1.StixCoreEnum.ATTACK_PATTERN);
         tmp.name = "attack-pattern" + number;
         tmp.description = "description-" + number;
-        tmp.object_refs = ['1', '2'];
         tmp.modified = new Date().toISOString();
         tmp.granular_markings = [new granular_marking_1.GranularMarking()];
         return tmp;

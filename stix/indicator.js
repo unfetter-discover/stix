@@ -23,9 +23,10 @@ var Indicator = /** @class */ (function (_super) {
      */
     function Indicator(data) {
         var _this = _super.call(this, data) || this;
+        _this.valid_from = new Date().toISOString();
         _this.type = stix_core_enum_1.StixCoreEnum.INDICATOR;
         return _this;
     }
     return Indicator;
-}(stix_core_1.StixCore));
+}(stix_core_1.StixExpanded));
 exports.Indicator = Indicator;

@@ -1,11 +1,11 @@
 import { Mock } from '../mock';
 import { GranularMarking } from './granular-marking';
-import { StixCore } from './stix-core';
+import { StixExpanded } from './stix-core';
 
-export class StixCoreMock extends Mock<StixCore> {
+export class StixCoreMock extends Mock<StixExpanded> {
 
-    public mockOne(): StixCore {
-        const stix = new StixCore();
+    public mockOne(): StixExpanded {
+        const stix = new StixExpanded();
         const number = this.genNumber();
         stix.id = `stix-${number}`;
         stix.name = `name-${number}`;

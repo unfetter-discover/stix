@@ -26,3 +26,11 @@ var Stix = /** @class */ (function (_super) {
     return Stix;
 }(stix_core_1.StixCore));
 exports.Stix = Stix;
+var ExpandedStix = /** @class */ (function (_super) {
+    __extends(ExpandedStix, _super);
+    function ExpandedStix() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return ExpandedStix;
+}(stix_core_1.StixExpanded));
+exports.ExpandedStix = ExpandedStix;

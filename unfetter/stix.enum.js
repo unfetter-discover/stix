@@ -21,4 +21,5 @@ var StixEnum;
     StixEnum["OBJECT_ASSESSMENT"] = "x-unfetter-object-assessment";
     StixEnum["QUESTION"] = "x-unfetter-question";
     StixEnum["SENSOR"] = "x-unfetter-sensor";
+    StixEnum["THREAT_BOARD"] = "x-threat-board";
 })(StixEnum = exports.StixEnum || (exports.StixEnum = {}));

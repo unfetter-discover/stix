@@ -18,4 +18,5 @@ export enum StixEnum {
     OBJECT_ASSESSMENT = 'x-unfetter-object-assessment',
     QUESTION = 'x-unfetter-question',
     SENSOR = 'x-unfetter-sensor',
+    THREAT_BOARD = 'x-threat-board'
 }

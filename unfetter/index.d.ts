@@ -5,6 +5,7 @@ export { Sensor } from './sensor';
 export { StixBundle } from './stix-bundle';
 export { StixEnum } from './stix.enum';
 export { Stix } from './stix';
+export { ThreatBoard } from './threat-board';
 export { WrappedStix } from './wrapped-stix';
 export { UnfetterIdentity } from './unfetter-identity';
 export { UnfetterIdentityMockFactory } from './unfetter-identity.mock';

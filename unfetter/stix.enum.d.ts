@@ -17,5 +17,6 @@ export declare enum StixEnum {
     CATEGORY = "x-unfetter-category",
     OBJECT_ASSESSMENT = "x-unfetter-object-assessment",
     QUESTION = "x-unfetter-question",
-    SENSOR = "x-unfetter-sensor"
+    SENSOR = "x-unfetter-sensor",
+    THREAT_BOARD = "x-threat-board"
 }

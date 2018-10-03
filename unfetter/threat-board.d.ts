@@ -17,5 +17,5 @@ export declare class ThreatBoard extends ExpandedStix implements UnfetterStixPro
         targets: string[];
     };
     reports: string[];
-    constructor(data?: ThreatBoard);
+    constructor(data?: any);
 }

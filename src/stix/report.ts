@@ -9,7 +9,7 @@ export class Report extends StixExpanded {
     /**
      * @param data
      */
-    constructor(data?: StixExpanded) {
+    constructor(data?: any) {
         super(data);
         this.type = StixCoreEnum.REPORT;
     }

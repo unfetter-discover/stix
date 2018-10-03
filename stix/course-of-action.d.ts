@@ -6,5 +6,5 @@ export declare class CourseOfAction extends StixExpanded {
     /**
      * @param data
      */
-    constructor(data?: StixExpanded);
+    constructor(data?: any);
 }

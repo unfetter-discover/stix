@@ -20,7 +20,7 @@ export class Identity extends StixCore {
     /**
      * @param data
      */
-    constructor(data?: StixCore) {
+    constructor(data?: any) {
         super(data);
     }
 

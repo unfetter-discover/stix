@@ -21,7 +21,7 @@ export class ThreatBoard extends ExpandedStix implements UnfetterStixProperties 
     };
     public reports: string[];
 
-    constructor(data?: ThreatBoard) {
+    constructor(data?: any) {
         super();
         Object.assign(this, data);
         this.type = StixEnum.THREAT_BOARD;

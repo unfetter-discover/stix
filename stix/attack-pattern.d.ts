@@ -9,5 +9,5 @@ export declare class AttackPattern extends StixExpanded implements KillChain {
     /**
      * @param data
      */
-    constructor(data?: StixExpanded);
+    constructor(data?: any);
 }

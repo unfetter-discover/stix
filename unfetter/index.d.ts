@@ -1,3 +1,4 @@
+export { Article } from './article';
 export { AttackPattern } from './attack-pattern';
 export { MetaProps } from './meta-props';
 export { Publishable } from './publishable';

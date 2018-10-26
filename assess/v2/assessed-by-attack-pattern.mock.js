@@ -23,7 +23,7 @@ var AssessedByAttackPatternMock = /** @class */ (function (_super) {
     AssessedByAttackPatternMock.prototype.mockOne = function () {
         var tmp = new assessed_by_attack_pattern_1.AssessedByAttackPattern();
         tmp._id = this.genId();
-        tmp.risk = Math.random() * 100;
+        tmp.risk = Math.random();
         return tmp;
     };
     return AssessedByAttackPatternMock;

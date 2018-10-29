@@ -9,6 +9,7 @@ export { KillChainPhase } from './kill-chain-phase';
 export { KillChainEnum } from './kill-chain.enum';
 export { Malware } from './malware';
 export { MarkingDefinition } from './marking-definition';
+export { Relationship } from './relationship';
 export { Report } from './report';
 export { StixCoreBundle } from './stix-core-bundle';
 export { StixCoreEnum } from './stix-core.enum';

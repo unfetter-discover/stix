@@ -12,6 +12,7 @@ export declare enum StixCoreEnum {
     MALWARE = "malware",
     MARKING_DEFINITION = "marking-definition",
     OBSERVED_DATA = "observed-data",
+    RELATIONSHIP = "relationship",
     REPORT = "report",
     SIGHTING = "sighting",
     THREAT_ACTOR = "threat-actor",

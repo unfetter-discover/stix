@@ -9,6 +9,7 @@
  * ```
  */
 export declare enum StixEnum {
+    ARTICLE = "x-unfetter-article",
     ASSESSED_OBJECT = "x-unfetter-assessed-object",
     ASSESSMENT = "x-unfetter-assessment",
     ASSESSMENT_GROUP = "x-unfetter-assessment-group",
@@ -17,5 +18,6 @@ export declare enum StixEnum {
     CATEGORY = "x-unfetter-category",
     OBJECT_ASSESSMENT = "x-unfetter-object-assessment",
     QUESTION = "x-unfetter-question",
-    SENSOR = "x-unfetter-sensor"
+    SENSOR = "x-unfetter-sensor",
+    THREAT_BOARD = "x-threat-board"
 }

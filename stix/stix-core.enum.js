@@ -15,6 +15,7 @@ var StixCoreEnum;
     StixCoreEnum["MALWARE"] = "malware";
     StixCoreEnum["MARKING_DEFINITION"] = "marking-definition";
     StixCoreEnum["OBSERVED_DATA"] = "observed-data";
+    StixCoreEnum["RELATIONSHIP"] = "relationship";
     StixCoreEnum["REPORT"] = "report";
     StixCoreEnum["SIGHTING"] = "sighting";
     StixCoreEnum["THREAT_ACTOR"] = "threat-actor";

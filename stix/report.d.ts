@@ -7,5 +7,5 @@ export declare class Report extends StixExpanded {
     /**
      * @param data
      */
-    constructor(data?: StixExpanded);
+    constructor(data?: any);
 }

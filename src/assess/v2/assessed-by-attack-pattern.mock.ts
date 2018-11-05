@@ -8,7 +8,7 @@ export class AssessedByAttackPatternMock extends Mock<AssessedByAttackPattern> {
     public mockOne(): AssessedByAttackPattern {
         const tmp = new AssessedByAttackPattern();
         tmp._id = this.genId();
-        tmp.risk = Math.random() * 100;
+        tmp.risk = Math.random();
         return tmp;
     }
 }

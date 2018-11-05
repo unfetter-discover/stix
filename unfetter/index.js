@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var article_1 = require("./article");
+exports.Article = article_1.Article;
 var attack_pattern_1 = require("./attack-pattern");
 exports.AttackPattern = attack_pattern_1.AttackPattern;
 var sensor_1 = require("./sensor");
@@ -10,6 +12,8 @@ var stix_enum_1 = require("./stix.enum");
 exports.StixEnum = stix_enum_1.StixEnum;
 var stix_1 = require("./stix");
 exports.Stix = stix_1.Stix;
+var threat_board_1 = require("./threat-board");
+exports.ThreatBoard = threat_board_1.ThreatBoard;
 var wrapped_stix_1 = require("./wrapped-stix");
 exports.WrappedStix = wrapped_stix_1.WrappedStix;
 var unfetter_identity_1 = require("./unfetter-identity");

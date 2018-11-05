@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var StixEnum;
 (function (StixEnum) {
+    StixEnum["ARTICLE"] = "x-unfetter-article";
     StixEnum["ASSESSED_OBJECT"] = "x-unfetter-assessed-object";
     StixEnum["ASSESSMENT"] = "x-unfetter-assessment";
     StixEnum["ASSESSMENT_GROUP"] = "x-unfetter-assessment-group";
@@ -21,4 +22,5 @@ var StixEnum;
     StixEnum["OBJECT_ASSESSMENT"] = "x-unfetter-object-assessment";
     StixEnum["QUESTION"] = "x-unfetter-question";
     StixEnum["SENSOR"] = "x-unfetter-sensor";
+    StixEnum["THREAT_BOARD"] = "x-threat-board";
 })(StixEnum = exports.StixEnum || (exports.StixEnum = {}));

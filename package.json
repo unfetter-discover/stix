@@ -14,7 +14,7 @@
     "url": "git+https://github.com/mushinlogit/stix2.git"
   },
   "license": "MIT",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "stix 2.0 data model",
   "main": "index.js",
   "types": "index.d.ts",
